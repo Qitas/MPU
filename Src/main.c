@@ -119,17 +119,23 @@ return ch;
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
-void uartdamget(void)
+void UART_DMA_Get(void)
 {
 		if(recv_end_flag ==1)
     {
-        printf("\nrx_len=%d\r\n",Rx_len);
-
+        printf("\nuart1_rx_len=%d\r\n",Rx_len);
+				printf("\nstr:\r\n");
         for(int i=0;i<Rx_len;i++)
         {
              printf("%c",ReceiveBuff[i]);
         }
-        printf("\r\n");          
+        printf("\r\n");    
+				printf("\nhex:\r\n");
+        for(int i=0;i<Rx_len;i++)
+        {
+             printf("%x",ReceiveBuff[i]);
+        }
+        printf("\r\n");   				
         for(int i = 0; i < Rx_len ; i++) 
         ReceiveBuff[i]=0;
         Rx_len=0;
@@ -182,9 +188,8 @@ int main(void)
   /* Initialize interrupts */
   MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
-        printf("This is a USART DMA Receive Test!!!\r\n");
-        /*        ????1 IDLE??        */
-        __HAL_UART_ENABLE_IT(&huart1, UART_IT_IDLE); 
+        printf("USART DMA Receive and Convert\r\n");
+      __HAL_UART_ENABLE_IT(&huart1, UART_IT_IDLE); 
         
   /* USER CODE END 2 */
 
@@ -195,7 +200,7 @@ int main(void)
 		
   /* USER CODE END WHILE */
     MX_USB_HOST_Process();
-    uartdamget();
+    UART_DMA_Get();
 
   /* USER CODE END 3 */
 	}

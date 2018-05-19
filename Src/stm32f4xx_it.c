@@ -117,17 +117,12 @@ void USART1_IRQHandler(void)
   HAL_UART_IRQHandler(&huart1);
   /* USER CODE BEGIN USART1_IRQn 1 */
         uint32_t temp;
-        /*        ?????1??        */
         if(USART1 == huart1.Instance)
-        {        /* ?????1IDLE??        */
-                if(RESET != __HAL_UART_GET_FLAG(&huart1,UART_FLAG_IDLE)){
-                        /*        ??????        */
-                        __HAL_UART_CLEAR_IDLEFLAG(&huart1);
-                        /*        ??DMA??        */
-                        HAL_UART_DMAStop(&huart1);
-                        /*        ??DMA?????????        */
-                        temp  = __HAL_DMA_GET_COUNTER(&hdma_usart1_rx);
-                        /*        ????????????        */
+        {        
+                if(RESET != __HAL_UART_GET_FLAG(&huart1,UART_FLAG_IDLE)){               
+                        __HAL_UART_CLEAR_IDLEFLAG(&huart1);                    
+                        HAL_UART_DMAStop(&huart1);                      
+                        temp  = __HAL_DMA_GET_COUNTER(&hdma_usart1_rx);                     
                         Rx_len =  BUFFERSIZE - temp; 
                         recv_end_flag = 1;
                 }
