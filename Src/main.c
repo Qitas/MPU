@@ -135,7 +135,18 @@ void UART_DMA_Get(void)
         {
              printf("%x",ReceiveBuff[i]);
         }
-        printf("\r\n");   				
+        printf("\r\n");  
+				if(ReceiveBuff[0]==0x11)
+				{			
+					uint8_t addr=ReceiveBuff[1]<<1;
+					uint8_t i2c_len=ReceiveBuff[2];
+					printf("\nSend data to IIC :0x%x ,0x%x \r\n",addr,i2c_len);
+					//HAL_Delay(3);
+					HAL_I2C_Master_Transmit(&hi2c3, addr,ReceiveBuff+3,i2c_len,0xffff);
+					//HAL_I2C_Master_Receive(&hi2c3, addr,ReceiveBuff,2,0xffff);
+					//HAL_I2C_Slave_Receive(&hi2c3,ReceiveBuff,1,0xffff);
+					//HAL_UART_Transmit(&huart1,ReceiveBuff,3,0xFFFF); 
+				}					
         for(int i = 0; i < Rx_len ; i++) 
         ReceiveBuff[i]=0;
         Rx_len=0;
