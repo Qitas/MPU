@@ -1,18 +1,18 @@
-﻿# [qitas docker](https://github.com/Qitas/docker)
+﻿# [docker](https://github.com/Qitas/docker)
 
-本工程用于从源工程开编排自己的相关容器资源，包括构建博客和相应的物联网开发工具及测试环境
+本工程用于收纳docker相应共用脚本和资源
 
-### 资源构建
+### [概述](https://github.com/Qitas/docker/wiki) 
 
-* [Web IDE](https://github.com/Qitas/WebIDE)
+Docker 是一个开源的应用容器引擎，基于 Go 语言 并遵从 Apache2.0 协议开源。 
 
-### 通信测试
+Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）,更重要的是容器性能开销极低。
 
-
-### 在线笔记
+### 构建容器
 
 * [docker vuepress](https://github.com/qitas/docker-vuepress) 
 * [docker wordpress](https://github.com/qitas/docker-wordpress) 
 
-[![sites](qitas/qitas.png)](http://www.qitas.cn)
+[![sites](http://182.61.61.133/link/resources/head.png)](http://www.qitas.cn) 
+
 ## 锻造最美之器
