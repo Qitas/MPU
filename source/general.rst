@@ -7,5 +7,3 @@ General Documentation
 
    ./general/introduction
    ./general/roadmap
-   ./general/FAQ
-

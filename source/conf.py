@@ -18,14 +18,14 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'Qitas Research'
+project = u'Qitas Docs'
 copyright = u'2020, Qitas'
 author = u'Qitas'
 
 # The short X.Y version
-version = u''
+version = u'0.1'
 # The full version, including alpha/beta/rc tags
-release = u'0.0.2'
+release = u'0.1.2'
 
 
 # -- General configuration ---------------------------------------------------
@@ -152,7 +152,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'picorio_doc.tex', u'picorio\\_doc Documentation',
-     u'fuzexin', 'manual'),
+    u'fuzexin', 'manual'),
 ]
 
 

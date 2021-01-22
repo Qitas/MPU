@@ -1,3 +1,0 @@
-[submodule "source/software/v8.wiki"]
-	path = source/software/v8.wiki
-	url = https://github.com/v8-riscv/v8.wiki.git
