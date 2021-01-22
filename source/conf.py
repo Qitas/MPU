@@ -18,9 +18,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'PicoRio User Manual'
-copyright = u'2020, RIOS Lab'
-author = u'RIOS contributors'
+project = u'Qitas User Manual'
+copyright = u'2020, Qitas'
+author = u'Qitas contributors'
 
 # The short X.Y version
 version = u''
