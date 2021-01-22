@@ -18,14 +18,14 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'Qitas User Manual'
+project = u'Qitas Research'
 copyright = u'2020, Qitas'
-author = u'Qitas contributors'
+author = u'Qitas'
 
 # The short X.Y version
 version = u''
 # The full version, including alpha/beta/rc tags
-release = u'0.0.1'
+release = u'0.0.2'
 
 
 # -- General configuration ---------------------------------------------------
@@ -97,7 +97,7 @@ html_theme_options = {
     'style_nav_header_background': '#003262'
 }
 
-html_logo = 'images/picoriologo.png'
+html_logo = 'images/qitas.jpg'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
