@@ -1,9 +1,34 @@
+*************
 从生态开始
-=============================
+*************
+
+芯片是作为平台型的产品，所以需要有大量支撑的生态作为基点，而生态的建立可以反哺产品本身，还能实现生态溢价。
+
+特别是量不大不小的产品，往往会为生态买单为研发买单。
+
+
+.. note::
+    Adding this theme as an extension is what enables localization of theme
+    strings in your translated output. If these strings are not translated in
+    your output, either we lack the localized strings for your locale, or you
+    are using an old version of the theme.
+
+
+STM32生态
+=============
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+
+   ./ecosystem/introduction
+   ./ecosystem/roadmap
+
+
+Arduino生态
+=============
+
+.. toctree::
+   :maxdepth: 2
 
    ./ecosystem/introduction
    ./ecosystem/roadmap

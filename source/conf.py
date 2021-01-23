@@ -94,7 +94,7 @@ html_theme = 'sphinx_rtd_theme'
 # documentation.
 #
 html_theme_options = {
-    'style_nav_header_background': '#0628AF'
+    'style_nav_header_background': '#F0FFFF'
 }
 
 html_logo = 'images/qitas.jpg'
