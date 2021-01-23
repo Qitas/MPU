@@ -71,7 +71,7 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = zh-CN
+# language = None
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -152,7 +152,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'qitas_doc.tex', u'qitas\\_doc Documentation',
-    u'fuzexin', 'manual'),
+    u'qitas', 'manual'),
 ]
 
 
