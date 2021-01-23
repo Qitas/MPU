@@ -7,3 +7,5 @@
 
    ./ecosystem/introduction
    ./ecosystem/roadmap
+   ./ecosystem/info
+   ./ecosystem/test

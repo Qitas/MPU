@@ -1,7 +1,3 @@
-.. documentation master file, created by
-   sphinx-quickstart on Fri May 29 14:12:33 2021.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
 《从芯开始》
 ===================

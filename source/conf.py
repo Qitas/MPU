@@ -12,13 +12,13 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import os
+import sys
+sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 
-project = u'从芯开始'
+project = u'《从芯开始》'
 copyright = u'2021,Qitas'
 author = u'Qitas'
 
@@ -207,4 +207,4 @@ intersphinx_mapping = {'https://docs.python.org/': None}
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
-html_favicon='favicon.ico'
+html_favicon='images/favicon.ico'
