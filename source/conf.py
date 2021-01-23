@@ -18,14 +18,14 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'Qitas Docs'
-copyright = u'2020, Qitas'
+project = u'从芯开始'
+copyright = u'2021,Qitas'
 author = u'Qitas'
 
 # The short X.Y version
-version = u'0.1'
+version = u'0.2'
 # The full version, including alpha/beta/rc tags
-release = u'0.1.2'
+release = u'0.2'
 
 
 # -- General configuration ---------------------------------------------------
@@ -71,7 +71,7 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = zh-CN
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -94,7 +94,7 @@ html_theme = 'sphinx_rtd_theme'
 # documentation.
 #
 html_theme_options = {
-    'style_nav_header_background': '#003262'
+    'style_nav_header_background': '#013CA2'
 }
 
 html_logo = 'images/qitas.jpg'
@@ -124,7 +124,7 @@ html_context = {
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'picorio_doc'
+htmlhelp_basename = 'qitas_doc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -151,7 +151,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'picorio_doc.tex', u'picorio\\_doc Documentation',
+    (master_doc, 'qitas_doc.tex', u'qitas\\_doc Documentation',
     u'fuzexin', 'manual'),
 ]
 
@@ -161,8 +161,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'picorio_doc', u'picorio_doc Documentation',
-     [author], 1)
+    (master_doc, 'qitas_doc', u'qitas_doc Documentation',
+    [author], 1)
 ]
 
 
@@ -172,9 +172,9 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'picorio_doc', u'picorio_doc Documentation',
-     author, 'picorio_doc', 'One line description of project.',
-     'Miscellaneous'),
+    (master_doc, 'qitas_doc', u'qitas_doc Documentation',
+    author, 'qitas_doc', 'One line description of project.',
+    'Miscellaneous'),
 ]
 
 
