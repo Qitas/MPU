@@ -28,7 +28,7 @@ version = u'0.2'
 release = u'0.2'
 
 
-# -- General configuration ---------------------------------------------------
+# -- ecosystem configuration ---------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #
@@ -94,7 +94,7 @@ html_theme = 'sphinx_rtd_theme'
 # documentation.
 #
 html_theme_options = {
-    'style_nav_header_background': '#013CA2'
+    'style_nav_header_background': '#0628AF'
 }
 
 html_logo = 'images/qitas.jpg'
@@ -151,7 +151,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'qitas_doc.tex', u'qitas\\_doc Documentation',
+    (master_doc, 'qitas_doc.tex', u'《从芯开始》',
     u'qitas', 'manual'),
 ]
 
@@ -161,7 +161,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'qitas_doc', u'qitas_doc Documentation',
+    (master_doc, 'qitas_doc', u'《从芯开始》',
     [author], 1)
 ]
 
@@ -172,8 +172,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'qitas_doc', u'qitas_doc Documentation',
-    author, 'qitas_doc', 'One line description of project.',
+    (master_doc, 'qitas_doc', u'《从芯开始》',
+    author, 'qitas_doc', '探索芯世界.',
     'Miscellaneous'),
 ]
 

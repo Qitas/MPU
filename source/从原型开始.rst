@@ -1,4 +1,4 @@
-Software Projects
+从原型开始
 ===================
 
 This section describes the software projects which PicoRio supports. We put all projects in a dashboard, and list out the current developing status of them.
@@ -7,11 +7,11 @@ This section describes the software projects which PicoRio supports. We put all 
 .. toctree::
    :hidden:
    :maxdepth: 2
-  
-   ./software/v8.wiki/Home
-	     
 
-	      
+   ./software/v8.wiki/Home
+
+
+
 +-------------------+------------------------------+----------------------------------------------------+---------------------------------+
 | Projects          |     Development State        |     Project Description                            |  Link                           |
 +===================+==============================+====================================================+=================================+
