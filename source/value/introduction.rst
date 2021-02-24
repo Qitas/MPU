@@ -1,5 +1,5 @@
-Introduction
-============
+经济价值
+==================
 
 What is PicoRio
 ----------------
@@ -24,7 +24,7 @@ The community lacks affordable RISC-V hardware platforms that run a variety of s
 Highlights
 ----------------
 
-* **Independently Maintained**: The RIOS Lab will be the solo nonprofit organization that governs the architecture development, ensures compliance, and will publish the design. The RIOS Lab will be the gatekeeper for both hardware and software, from SoC and firmware/drivers to high-level software and documentation. PicoRio will be vendor agnostic and not proprietary, and the RIOS Lab will work with academic and commercial organizations that will commit to its expansion and volume manufacturing. 
+* **Independently Maintained**: The RIOS Lab will be the solo nonprofit organization that governs the architecture development, ensures compliance, and will publish the design. The RIOS Lab will be the gatekeeper for both hardware and software, from SoC and firmware/drivers to high-level software and documentation. PicoRio will be vendor agnostic and not proprietary, and the RIOS Lab will work with academic and commercial organizations that will commit to its expansion and volume manufacturing.
 
 * **Open Source**: PicoRio will open source as many components as possible, including the CPU and main SoC design, chip package and board design files, device drivers, and firmware. The exceptions are foundry related IPs (e.g., TSMC SRAM configurations), commercial high-speed interfaces, and complex commercial IP blocks like GPU. Nevertheless, our goal is to reduce the commercial closed source IPs for each successive release of PicoRio, with the long term goal of having a version that is as open as practical.
 
