@@ -3,20 +3,13 @@
 从芯开始
 ===================
 
-**A place where Developers and Teams have true Freedom! No more vendor lock-in!**
+**贪婪的本性，让我们一直在追逐尚未得到过的东西，自以为拥有过的一直都在!**
 
-.. contents:: Contents
+.. contents:: 目录
     :local:
 
 
-Philosophy
+写作动机
 ----------
 
-PlatformIO's unique philosophy in the embedded market provides developers with a modern
-integrated development environment (:ref:`ide`) that works cross-platform,
-supports many different software development kits (SDKs) or :ref:`frameworks`, and
-includes sophisticated debugging (:ref:`piodebug`), unit testing (:ref:`unit_testing`),
-automated code analysis (:ref:`start`), and remote management (:ref:`pioremote`).
-It is architected to maximize flexibility and choice by developers, who can use either
-graphical or command line editors (:ref:`piocore`), or both.
-
+整理行囊，是再出发的前提，知道自己拥有什么才能更明确自己要去干什么。

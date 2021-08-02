@@ -23,8 +23,7 @@ Contents
     qitas
 
 .. toctree::
-    :caption: Started
+    :caption: 从认知开始
     :maxdepth: 1
 
-    home/index
-
+    芯知识 <home/index>

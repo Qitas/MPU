@@ -2,7 +2,7 @@
 
 .. _piohome:
 
-PlatformIO Home
+芯是什么
 ===============
 
 |PIOHOME| allows you to interact with PlatformIO's professional collaborative platform
