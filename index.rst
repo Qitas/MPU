@@ -2,7 +2,7 @@
 从芯开始
 ===========================
 
-**成为思想的开源者!**
+**做思想开源者!**
 
 我是一个不够专业也不够专注的嵌入式工程师，在我6年的职业生涯中，我在不断强化自己的定义和信念，更清晰知道自己想要的有些理想主义，虽然路径艰难曲折，但却一直都在路上。
 
@@ -23,10 +23,31 @@
 .. toctree::
     :maxdepth: 1
 
-    内容简介 <preface>
+    内容提纲 <preface>
 
 .. toctree::
-    :caption: 从认知开始
+    :caption: 知识体系
     :maxdepth: 1
 
-    芯知识 <source/index>
+    芯片分类 <source/index>
+
+.. toctree::
+    :caption: 编程基础
+    :maxdepth: 1
+
+    C编程 <source/index>
+    IDE环境 <source/index>
+    通信协议 <source/index>
+
+.. toctree::
+    :caption: 技术领域
+    :maxdepth: 1
+
+    物联网 <source/index>
+    机器人 <source/index>
+
+.. toctree::
+    :caption: 开发总结
+    :maxdepth: 1
+
+    通信相关 <source/index>

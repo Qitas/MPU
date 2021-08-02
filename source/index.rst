@@ -1,21 +1,19 @@
-.. |SOCHOME| replace:: **芯芸<https://www.soc.xin>**
+.. |SOCHOME| replace:: `芯芸 <https://www.soc.xin>`
 
 .. _define:
 
 芯分类
 ===============
 
-|SOCHOME| allows you to interact with PlatformIO's professional collaborative platform
-using modern and cross-platform GUI:
+|SOCHOME| 收集整理了常用的MCU产品开发资源:
 
 .. contents::
     :local:
 
-硅半导体
+MCU
 -----------
 
 
-Please launch |SOCHOME| Web-server using :ref:`preface` command and open in
-your browser http://127.0.0.1:8008.
+|SOCHOME| 提供更多芯选择 :ref:`preface` http://182.61.61.133:8008.
 
 .. image:: ../_static/images/qitas.png
