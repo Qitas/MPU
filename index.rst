@@ -2,20 +2,31 @@
 从芯开始
 ===========================
 
-**A place where Developers find your chip! No more vendor lock-in!**
+**让经验和思考开源!**
+
+我是一个不够专业也不够专注的嵌入式工程师，在我6年的职业生涯中，我在不断强化自己的定义和信念，更清晰知道自己想要的有些理想主义，虽然路径艰难曲折，但却一直都在路上。
+
+我思考最多的问题，是如何让使用者自己定义产品，撇开知识背景和能力体系的限制，具有较高受教育程度的大众都能清晰表达自己的需求，为何不能通过编程语言和设备直接实现沟通。
+
+传统意义上产品开发的概念随着大众基础素质的提升和需求的差异化个性化已经不太适用了，更具体的，硬件产品本身可以等效于一种逻辑的载体，不应该只是一个群体的玩具。
+
+上述表述可能不够达意，类似的愿景也有很多，从芯开始的目的，大概是让用户知道地里可以长什么，菜市场可以买到什么，可以将其用来做什么，最终来定义我要吃什么。
+
+芯片既容器。
 
 
 **Social:** `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
+`GitHub <https://GitHub.com/Qitas>`_ |
 `Twitter <https://twitter.com/QitasTang>`_ |
 `Facebook <https://www.facebook.com/qitast>`_
 
-Contents
---------
+从何开始？
+----------
 
 .. toctree::
     :maxdepth: 1
 
-    preface
+    内容提纲 <preface>
 
 .. toctree::
     :caption: 从认知开始

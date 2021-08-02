@@ -1,1 +1,0 @@
-/kown.html -> /home/index.html
