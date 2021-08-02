@@ -20,16 +20,13 @@
 `Twitter <https://twitter.com/QitasTang>`_ |
 `Facebook <https://www.facebook.com/qitast>`_
 
-从何开始？
-----------
-
 .. toctree::
     :maxdepth: 1
 
-    内容提纲 <preface>
+    内容简介 <preface>
 
 .. toctree::
     :caption: 从认知开始
     :maxdepth: 1
 
-    芯知识 <home/index>
+    芯知识 <source/index>
