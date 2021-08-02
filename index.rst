@@ -29,25 +29,25 @@
     :caption: 知识体系
     :maxdepth: 1
 
-    芯片分类 <source/index>
+    芯片分类 <knowledge/index>
 
 .. toctree::
     :caption: 编程基础
     :maxdepth: 1
 
-    C编程 <source/index>
-    IDE环境 <source/index>
-    通信协议 <source/index>
+    C编程 <knowledge/index>
+    IDE环境 <knowledge/index>
+    通信协议 <knowledge/index>
 
 .. toctree::
     :caption: 技术领域
     :maxdepth: 1
 
-    物联网 <source/index>
-    机器人 <source/index>
+    物联网 <application/iot>
+    机器人 <application/robot>
 
 .. toctree::
-    :caption: 开发总结
+    :caption: 实践总结
     :maxdepth: 1
 
-    通信相关 <source/index>
+    通信相关 <summaries/index>

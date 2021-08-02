@@ -1,4 +1,3 @@
-.. |SOCHOME| replace:: `芯芸 <https://www.soc.xin>`
 
 .. _define:
 
