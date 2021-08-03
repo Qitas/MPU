@@ -29,7 +29,7 @@
     :caption: 理论知识
     :maxdepth: 1
 
-    芯片分类 <knowledge/index>
+    芯片知识 <knowledge/index>
 
 .. toctree::
     :caption: 编程相关
