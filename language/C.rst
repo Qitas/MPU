@@ -15,6 +15,8 @@ C语言
     static <static>
     const <const>
     stack <stack>
+    data <data>
+    compile <compile>
 
 
 格式化
