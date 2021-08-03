@@ -1,6 +1,6 @@
 .. _define:
 
-芯分类
+芯知识
 ===============
 
 收集整理了常用的MCU产品开发资源:
@@ -21,3 +21,4 @@ MCU相关
     :maxdepth: 1
 
     Cortex <cortex>
+    资源调度 <process>
