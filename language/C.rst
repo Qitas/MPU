@@ -14,6 +14,16 @@ C语言
     static <static>
     const <const>
 
+面向对象OOP
+-----------
+
+* 封装(encapsulation)
+* 继承(Inheritance)
+* 多态(Polymorphism)
+* 抽象(abstract)
+
+
+
 
 GP vs OOP
 -----------

@@ -20,5 +20,6 @@ MCU相关
 .. toctree::
     :maxdepth: 1
 
-    Cortex <cortex>
+    内核架构 <architecture>
     资源调度 <process>
+    存储管理 <memory>
