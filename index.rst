@@ -26,32 +26,32 @@
     内容提纲 <preface>
 
 .. toctree::
-    :caption: 理论体系
+    :caption: 理论知识
     :maxdepth: 1
 
     芯片分类 <knowledge/index>
 
 .. toctree::
-    :caption: 编程基础
+    :caption: 编程相关
     :maxdepth: 1
 
     C语言 <language/C>
 
 .. toctree::
-    :caption: 开发环境
+    :caption: 环境相关
     :maxdepth: 1
 
-    Keil IDE <backdrop/keil>
+    Keil <backdrop/keil>
     Linux <backdrop/linux>
     Docker <backdrop/docker>
-
+    interface <backdrop/interface>
 
 .. toctree::
-    :caption: 应用领域
+    :caption: 应用相关
     :maxdepth: 1
 
     物联网 <application/iot>
-    机器人 <application/robot>
+    自动化 <application/robot>
 
 .. toctree::
     :caption: 实践总结

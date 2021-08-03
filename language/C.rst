@@ -16,6 +16,20 @@ C语言
     const <const>
     stack <stack>
 
+
+格式化
+-----------
+
+clang-format，它是基于clang的一个命令行工具，能够自动化格式C/C++/Obj-C代码，支持多种代码风格：Google, Chromium, LLVM, Mozilla, WebKit，也支持自定义风格（通过编写.clang-format文件）很方便的同意代码格式。
+
+静态检查
+-----------
+
+* 检测能力：Cppcheck > TscanCode > Flawfinder
+* 友好度：TscanCode > Cppcheck > Flawfinder
+* 易用性：TscanCode > Cppcheck > Flawfinder
+
+
 常见问题
 -----------
 
