@@ -13,3 +13,4 @@ C语言
 
     inline <inline>
     static <static>
+    stack <stack>
