@@ -26,7 +26,7 @@
     内容提纲 <preface>
 
 .. toctree::
-    :caption: 知识体系
+    :caption: 理论体系
     :maxdepth: 1
 
     芯片分类 <knowledge/index>
@@ -35,12 +35,19 @@
     :caption: 编程基础
     :maxdepth: 1
 
-    C编程 <knowledge/index>
-    IDE环境 <knowledge/index>
-    通信协议 <knowledge/index>
+    C语言 <language/C>
 
 .. toctree::
-    :caption: 技术领域
+    :caption: 开发环境
+    :maxdepth: 1
+
+    Keil IDE <backdrop/keil>
+    Linux <backdrop/linux>
+    Docker <backdrop/docker>
+
+
+.. toctree::
+    :caption: 应用领域
     :maxdepth: 1
 
     物联网 <application/iot>
