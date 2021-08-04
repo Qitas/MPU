@@ -29,32 +29,32 @@
     :caption: 理论知识
     :maxdepth: 1
 
-    芯片知识 <knowledge/index>
+    芯片功能 <peripheral/index>
 
 .. toctree::
-    :caption: 编程相关
+    :caption: 语言相关
     :maxdepth: 1
 
     C语言 <language/C>
 
 .. toctree::
-    :caption: 环境相关
+    :caption: 工具相关
     :maxdepth: 1
 
-    Keil <backdrop/keil>
-    Linux <backdrop/linux>
-    Docker <backdrop/docker>
-    interface <backdrop/interface>
+    Keil <toolchain/keil>
+    Linux <toolchain/linux>
+    Docker <toolchain/docker>
+    interface <toolchain/interface>
 
 .. toctree::
-    :caption: 应用相关
+    :caption: 应用开发
     :maxdepth: 1
 
     物联网 <application/iot>
     自动化 <application/robot>
 
 .. toctree::
-    :caption: 实践总结
+    :caption: 开发总结
     :maxdepth: 1
 
-    通信相关 <summaries/index>
+    通信相关 <summary/index>

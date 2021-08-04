@@ -23,3 +23,4 @@ MCU相关
     内核架构 <architecture>
     资源调度 <process>
     存储管理 <memory>
+    脉冲宽度调制 <pwm>
