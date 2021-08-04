@@ -1,6 +1,6 @@
-.. _peripheral:
+.. _system:
 
-外设使用
+操作系统
 ===============
 
 收集整理了常用的MCU产品开发资源:
@@ -20,5 +20,7 @@ MCU相关
 .. toctree::
     :maxdepth: 1
 
-    脉冲宽度调制 <pwm>
-    调试接口 <interface>
+    资源调度 <process>
+    存储管理 <memory>
+    Linux <linux>
+    Docker <docker>
