@@ -2,9 +2,9 @@
 从芯开始
 ===========================
 
-**做芯思想的开源者!**
+**芯思想的开源者!**
 
- `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
+`LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
 `GitHub <https://GitHub.com/Qitas>`_ |
 `Twitter <https://twitter.com/QitasTang>`_ |
 `Facebook <https://www.facebook.com/qitast>`_
@@ -18,7 +18,7 @@
 
 表述可能不够达意，类似愿景也有很多，从芯开始，大概就是让用户知道地里可以长什么，菜市场可以买到什么，可以将其用来做什么，最终来定义我要吃什么。
 
-我试图描述的愿景：``芯既容器``
+我试图描述的愿景：**芯既容器**
 
 
 .. toctree::
@@ -54,7 +54,7 @@
     操作系统 <system/index>
 
 .. toctree::
-    :caption: 应用开发
+    :caption: 项目实践
     :maxdepth: 1
 
     物联网 <application/iot>
