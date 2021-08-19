@@ -3,16 +3,11 @@
 操作系统
 ===============
 
-收集整理了常用的MCU产品开发资源:
-
 .. contents::
     :local:
 
-MCU相关
+开发环境
 -----------
-
-
- 提供更多芯选择 :ref:`preface` http://182.61.61.133:8008.
 
 .. image:: ../_static/images/qitas.png
 
@@ -20,7 +15,15 @@ MCU相关
 .. toctree::
     :maxdepth: 1
 
-    资源调度 <process>
-    存储管理 <memory>
     Linux <linux>
     Docker <docker>
+
+
+运行环境
+-----------
+
+.. toctree::
+    :maxdepth: 1
+
+    资源调度 <process>
+    存储管理 <memory>

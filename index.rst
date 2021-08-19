@@ -2,7 +2,13 @@
 从芯开始
 ===========================
 
-**做思想开源者!**
+**做芯思想的开源者!**
+
+ `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
+`GitHub <https://GitHub.com/Qitas>`_ |
+`Twitter <https://twitter.com/QitasTang>`_ |
+`Facebook <https://www.facebook.com/qitast>`_
+
 
 我是一个不够专业也不够专注的嵌入式工程师，在我6年的职业生涯中，我在不断强化自己的定义和信念，更清晰知道自己想要的有些理想主义，虽然路径艰难曲折，但却一直都在路上。
 
@@ -12,13 +18,8 @@
 
 表述可能不够达意，类似愿景也有很多，从芯开始，大概就是让用户知道地里可以长什么，菜市场可以买到什么，可以将其用来做什么，最终来定义我要吃什么。
 
-我试图描述的愿景：芯既容器
+我试图描述的愿景：``芯既容器``
 
-
-**Social:** `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
-`GitHub <https://GitHub.com/Qitas>`_ |
-`Twitter <https://twitter.com/QitasTang>`_ |
-`Facebook <https://www.facebook.com/qitast>`_
 
 .. toctree::
     :maxdepth: 1
@@ -29,7 +30,7 @@
     :caption: 理论知识
     :maxdepth: 1
 
-    芯片功能 <peripheral/index>
+    芯片外设 <peripheral/index>
 
 
 .. toctree::
@@ -63,4 +64,4 @@
     :caption: 开发总结
     :maxdepth: 1
 
-    通信相关 <summary/index>
+    通信调试 <summary/index>
