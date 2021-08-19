@@ -1,6 +1,6 @@
-.. _interface:
+.. _debug:
 
-interface
+调试接口
 ===============
 
 jtag
