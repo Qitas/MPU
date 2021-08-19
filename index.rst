@@ -34,14 +34,14 @@
     调试接口 <peripheral/debug>
 
 .. toctree::
-    :caption: 语言相关
+    :caption: 编程语言
     :maxdepth: 1
 
-    C语言 <language/C>
+    C系语言 <language/C>
     汇编语言 <language/asm>
 
 .. toctree::
-    :caption: 工具相关
+    :caption: 开发工具
     :maxdepth: 1
 
     IDE(Keil) <toolchain/keil>
@@ -62,7 +62,7 @@
     自动化 <application/robot>
 
 .. toctree::
-    :caption: 开发总结
+    :caption: 总结感悟
     :maxdepth: 1
 
-    通信调试 <summary/index>
+    平台对接 <summary/cloud>
