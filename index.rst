@@ -30,8 +30,8 @@
     :caption: 理论知识
     :maxdepth: 1
 
-    芯片外设 <peripheral/index>
-
+    常用外设 <peripheral/normal>
+    调试接口 <peripheral/debug>
 
 .. toctree::
     :caption: 语言相关
@@ -44,7 +44,8 @@
     :caption: 工具相关
     :maxdepth: 1
 
-    Keil <toolchain/keil>
+    IDE(Keil) <toolchain/keil>
+    EDA(KiCad) <toolchain/kicad>
 
 .. toctree::
     :caption: 系统相关
