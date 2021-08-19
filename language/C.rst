@@ -6,13 +6,7 @@ C语言
 .. contents::
     :local:
 
-.. toctree::
-    :caption: 关键词
-    :maxdepth: 1
 
-    inline <inline>
-    static <static>
-    const <const>
 
 面向对象OOP
 -----------
@@ -39,6 +33,15 @@ OOP：Object Oriented Programming 面向对象编程
 说面向对象/面向过程区别必然是错的，因为C的程序写大了不可避免地还是要模拟一下面向对象的，而C++本身根本不局限于面向对象……
 
 C++ 几乎是 C 的超集，只有少量功能 C++ 不支持。
+
+
+.. toctree::
+    :caption: C语言关键词
+    :maxdepth: 1
+
+    inline <inline>
+    static <static>
+    const <const>
 
 
 格式化

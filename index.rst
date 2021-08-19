@@ -37,6 +37,7 @@
     :maxdepth: 1
 
     C语言 <language/C>
+    汇编语言 <language/asm>
 
 .. toctree::
     :caption: 工具相关
