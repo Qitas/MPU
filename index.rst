@@ -49,6 +49,7 @@
     :caption: 系统相关
     :maxdepth: 1
 
+    实时系统 <system/rtos>
     操作系统 <system/index>
 
 .. toctree::
