@@ -30,7 +30,10 @@
     :caption: 理论知识
     :maxdepth: 1
 
-    常用外设 <peripheral/normal>
+    模拟外设 <peripheral/analog>
+    数字外设 <peripheral/digital>
+    低速通信 <peripheral/normal>
+    高速通信 <peripheral/bus>
     调试接口 <peripheral/debug>
 
 .. toctree::
