@@ -63,6 +63,7 @@
 
     物联网 <application/iot>
     自动化 <application/robot>
+    仪器仪表 <application/meter>
 
 .. toctree::
     :caption: 总结感悟
