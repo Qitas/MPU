@@ -70,3 +70,4 @@
     :maxdepth: 1
 
     平台对接 <summary/cloud>
+    PID控制 <summary/pid>
