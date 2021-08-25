@@ -14,6 +14,6 @@ MCU
 -----------
 
 
-|SOCHOME| 提供更多芯选择 :ref:`preface` http://182.61.61.133:8008.
+|SOCHOME| 提供更多芯选择 :ref:`pre` http://182.61.61.133:8008.
 
 .. image:: ../_static/images/qitas.png
