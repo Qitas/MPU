@@ -6,9 +6,16 @@ IDE
 .. contents::
     :local:
 
+
 Keil
 ---------------
 
+Keil MDK-ARM（旧称RealView MDK）开发工具源自德国Keil公司，被全球上百万的嵌入式开发工程师验证和使用，是ARM公司目前最新推出的针对各种嵌入式处理器的软件开发工具。
+
+KEIL MDK集成了业内最领先的技术，包括uVision3、uVision4、uVision5集成开发环境与 ARM编译器。支持ARM7、ARM9、Cortex-M0、Cortex-M0+、Cortex-M3、Cortex-M4、Cortex-R4内核核处理器。
+
+Keil MDK可以自动配置启动代码，集成Flash烧写模块，强大的Simulation设备模拟，性能分析等功能，与ARM之前的工具包ADS等相比，ARM编译器的最新版本可将性能改善超过20％以上。
+　　
 .. toctree::
     :maxdepth: 1
 
@@ -17,6 +24,11 @@ Keil
 IAR
 ---------------
 
+IAR Embedded Workbench是一套用于编译和调试嵌入式系统应用程序的开发工具，支持汇编、C和C++语言。它提供完整的集成开发环境，包括工程管理器、编辑器、编译链接工具和C-SPY调试器。
+
+IAR Systems以其高度优化的编译器而闻名。每个C/C++编译器不仅包含一般全局性的优化，也包含针对特定芯片的低级优化，以充分利用您所选芯片的所有特性，确保较小的代码尺寸。IAR Embedded Workbench能够支持由不同的芯片制造商生产，且种类繁多的8位、16位或32位芯片。
+
+
 .. toctree::
     :maxdepth: 1
 
@@ -24,24 +36,11 @@ IAR
 
 
 
+对比
+------------
 
-Keil vs IAR
--------------
-
-Keil MDK-ARM（旧称RealView MDK）开发工具源自德国Keil公司，被全球上百万的嵌入式开发工程师验证和使用，是ARM公司目前最新推出的针对各种嵌入式处理器的软件开发工具。
-
-KEIL MDK集成了业内最领先的技术，包括uVision3、uVision4、uVision5集成开发环境与 ARM编译器。支持ARM7、ARM9、Cortex-M0、Cortex-M0+、Cortex-M3、Cortex-M4、Cortex-R4内核核处理器。
-
-Keil MDK可以自动配置启动代码，集成Flash烧写模块，强大的Simulation设备模拟，性能分析等功能，与ARM之前的工具包ADS等相比，ARM编译器的最新版本可将性能改善超过20％以上。
-　　
-IAR Embedded Workbench是一套用于编译和调试嵌入式系统应用程序的开发工具，支持汇编、C和C++语言。它提供完整的集成开发环境，包括工程管理器、编辑器、编译链接工具和C-SPY调试器。
-
-IAR Systems以其高度优化的编译器而闻名。每个C/C++编译器不仅包含一般全局性的优化，也包含针对特定芯片的低级优化，以充分利用您所选芯片的所有特性，确保较小的代码尺寸。IAR Embedded Workbench能够支持由不同的芯片制造商生产，且种类繁多的8位、16位或32位芯片。
-
-
-
-主要区别
-~~~~~~~~~
+MDK vs IAR
+~~~~~~~~~~~~
 
 一般来说，如果主要是采用C，并且也不会有太多的library需要连接，MDK和IAR都能胜任。不过这种情形就比较推荐IAR，因为其非常简洁，上手也快，代码层次也能清晰明了。
 

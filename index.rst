@@ -60,7 +60,7 @@
     虚拟化 <system/docker>
 
 .. toctree::
-    :caption: 项目实践
+    :caption: 应用实践
     :maxdepth: 1
 
     物联网 <application/iot>
@@ -69,7 +69,7 @@
     仪器仪表 <application/meter>
 
 .. toctree::
-    :caption: 总结感悟
+    :caption: 项目总结
     :maxdepth: 1
 
     PID控制 <summary/pid>
