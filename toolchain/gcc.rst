@@ -50,3 +50,12 @@ hard   : armhf架构(对应的编译器gcc-arm-linux-gnueabihf)采用的默认�
 _no_init用于禁止系统启动时的变量初始化，我想知道，什么情况下需要用这个关键字使系统禁止变量的初始化，禁止变量初始化用在什么场合，为什么要这样做，有什么意义吗？
 另外__ramfunc也有类似疑问，书上只是说用__ramfunc定义的函数企图访问ROM将导致编译器产生警告，请问什么情况下才需要用__ramfunc
 
+
+SDCC
+---------------
+
+.. toctree::
+    :maxdepth: 1
+
+    SDCC  <sdcc>
+

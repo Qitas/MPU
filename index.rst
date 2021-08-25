@@ -47,9 +47,9 @@
     :caption: 开发工具
     :maxdepth: 1
 
-    GCC <toolchain/gcc>
     IDE <toolchain/ide>
-    EDA <toolchain/kicad>
+    EDA <toolchain/eda>
+    GCC <toolchain/gcc>
 
 .. toctree::
     :caption: 系统相关
@@ -57,6 +57,7 @@
 
     实时系统 <system/rtos>
     操作系统 <system/index>
+    虚拟化 <system/docker>
 
 .. toctree::
     :caption: 项目实践
@@ -71,5 +72,6 @@
     :caption: 总结感悟
     :maxdepth: 1
 
-    平台对接 <summary/cloud>
     PID控制 <summary/pid>
+    云对接 <summary/cloud>
+

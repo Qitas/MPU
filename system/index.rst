@@ -6,20 +6,17 @@
 .. contents::
     :local:
 
-开发环境
+运行环境
 -----------
-
-.. image:: ../_static/images/qitas.png
-
 
 .. toctree::
     :maxdepth: 1
 
     Linux <linux>
-    Docker <docker>
+    Window <window>
 
 
-运行环境
+应用开发
 -----------
 
 .. toctree::
