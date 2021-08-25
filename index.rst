@@ -63,7 +63,8 @@
     :maxdepth: 1
 
     物联网 <application/iot>
-    自动化 <application/robot>
+    机器人 <application/robot>
+    信号处理 <application/signal>
     仪器仪表 <application/meter>
 
 .. toctree::
