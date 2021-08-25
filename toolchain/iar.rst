@@ -13,8 +13,6 @@ STM8
 -----------
 
 
-
-
 .. code-block:: bash
 
     extern volatile BYTE sppRxStatus;

@@ -119,7 +119,11 @@ EABI：嵌入式ABI。嵌入式应用二进制接口指定了文件格式、数�
 
 上面这句表示在编译hello.c时：
 
--I /home/hello/include表示将/home/hello/include目录作为第一个寻找头文件的目录，寻找的顺序是：/home/hello/include-->/usr/include-->/usr/local/include
+-I /home/hello/include
+
+表示将/home/hello/include目录作为第一个寻找头文件的目录，寻找的顺序是：
+
+/home/hello/include-->/usr/include-->/usr/local/include
 
 
 存储访问
