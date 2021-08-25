@@ -57,5 +57,6 @@ Zadig是一个安装通用USB驱动程序的Windows应用程序，诸如WinUSB,l
 源代码
 
 .. code-block:: bash
+
     $ git clone git://github.com/pbatard/libwdi
 

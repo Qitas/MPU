@@ -40,8 +40,8 @@
     :caption: 编程语言
     :maxdepth: 1
 
-    C系语言 <language/C>
-    汇编语言 <language/asm>
+    C系语言 <lang/C>
+    汇编语言 <lang/asm>
 
 .. toctree::
     :caption: 开发工具
