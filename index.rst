@@ -48,7 +48,7 @@
     :maxdepth: 1
 
     GCC <toolchain/gcc>
-    IDE <toolchain/keil>
+    IDE <toolchain/ide>
     EDA <toolchain/kicad>
 
 .. toctree::
