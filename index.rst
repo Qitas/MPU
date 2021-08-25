@@ -47,8 +47,9 @@
     :caption: 开发工具
     :maxdepth: 1
 
-    IDE(Keil) <toolchain/keil>
-    EDA(KiCad) <toolchain/kicad>
+    GCC <toolchain/gcc>
+    IDE <toolchain/keil>
+    EDA <toolchain/kicad>
 
 .. toctree::
     :caption: 系统相关
