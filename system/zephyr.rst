@@ -10,10 +10,8 @@ Zephyr
 -----------
 
 Zephyr 是 Linux 基金会于 2016 年 2 月推出的一个适用于物联网的小型可伸缩的实时操作系统，支持多种处理器架构。
-
 Zephyr 可在 RAM 大小为 8KB 的 MCU 上流畅运行，经过裁剪甚至可在 RAM 为最小的 2KB 时运行。
-
-Zephyr 是安全的、开源的、模块化的以及支持多种连接方式，将支持 Bluetooth, Bluetooth LE, WiFi, 802.15.4 以及 6Lowpan, CoAP, IPv4, IPv6, and NFC.。
+Zephyr 是安全的、开源的、模块化的以及支持多种连接方式，支持 Bluetooth, Bluetooth LE, WiFi, 802.15.4 以及 6Lowpan, CoAP, IPv4, IPv6, and NFC。
 
 .. image:: ./images/Zephyr.png
     :target: https://zhuanlan.zhihu.com/p/25576884
@@ -39,7 +37,9 @@ Zephyr 相比其他开源物联网系统具有以下优点：
 * 3.编译时定义资源。所有系统资源都在编译时定义，以减小代码量、增强代码性能。
 * 4.最小错误检查。提供最小化的运行时错误检查，以减小代码量、增强代码性能。提供一个可选的错误检查基础，以协助应用程序的开发和调试。
 
-提供了许多耳熟能详的服务：
+
+服务
+-----------
 
 *  多线程服务：为基于优先级的、非抢占式的 fiber 和基于优先级的、抢占式的 task 提供可选的时间片。
 *  中断服务：在编译时、运行时均可注册中断处理函数。
