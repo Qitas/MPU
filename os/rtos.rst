@@ -125,5 +125,6 @@
 .. toctree::
     :maxdepth: 1
 
+    RT-Thread <rtt>
     freeRTOS  <freertos>
     Zephyr  <zephyr>

@@ -55,9 +55,9 @@
     :caption: 系统相关
     :maxdepth: 1
 
-    实时系统 <system/rtos>
-    操作系统 <system/index>
-    虚拟化 <system/docker>
+    实时系统 <os/rtos>
+    操作系统 <os/index>
+    虚拟化 <os/docker>
 
 .. toctree::
     :caption: 应用实践
