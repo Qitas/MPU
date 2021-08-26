@@ -47,9 +47,9 @@
     :caption: 开发工具
     :maxdepth: 1
 
-    IDE <toolchain/ide>
-    EDA <toolchain/eda>
-    GCC <toolchain/gcc>
+    IDE <tools/ide>
+    EDA <tools/eda>
+    GCC <tools/gcc>
 
 .. toctree::
     :caption: 系统相关
@@ -63,10 +63,10 @@
     :caption: 应用实践
     :maxdepth: 1
 
-    物联网 <application/iot>
-    机器人 <application/robot>
-    信号处理 <application/signal>
-    仪器仪表 <application/meter>
+    物联网 <app/iot>
+    机器人 <app/robot>
+    信号处理 <app/signal>
+    仪器仪表 <app/meter>
 
 .. toctree::
     :caption: 项目总结

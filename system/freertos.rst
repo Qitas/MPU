@@ -6,19 +6,22 @@ freeRTOS
 .. contents::
     :local:
 
-简介
+系统简介
 -----------
 
-FreeRTOS是免费的。许多半导体厂商产品的 SDK(Software Development Kit—软件开发工具包) 包就使用 FreeRTOS 作为其操作系统，尤其是 WIFI、蓝牙这些带协议栈的芯片或模块。
+FreeRTOS 是一款适用于微控制器的开源实时操作系统，让您可以轻松地编写、部署、保护、连接和管理低功耗的小型边缘设备。
 
-从文件数量上来看 FreeRTOS 要比uC/OSII 和 uC/OSIII 小的多。
+FreeRTOS 在 MIT 开源许可证下免费分发，包括一个内核和一组不断丰富的软件库，适用于各种行业部门和应用程序。
 
-特点
+许多半导体厂商产品的 SDK(Software Development Kit—软件开发工具包) 包就使用 FreeRTOS 作为其操作系统，尤其是 WIFI、蓝牙这些带协议栈的芯片或模块。
+
+
+系统特点
 -----------
 
 FreeRTOS 是一个可裁剪的小型 RTOS 系统，其特点包括：
 
-* FreeRTOS 的内核支持抢占式，合作式和时间片调度。
+* 内核支持抢占式，合作式和时间片调度。
 * 提供了一个用于低功耗的 Tickless 模式。
 * 系统的组件在创建时可以选择动态或者静态的 RAM，比如任务、消息队列、信号量、软件定时器等等。
 * FreeRTOS-MPU 支持 Corex-M 系列中的 MPU 单元，如 STM32F429。
@@ -30,6 +33,13 @@ FreeRTOS 是一个可裁剪的小型 RTOS 系统，其特点包括：
 * 任务数量不限。
 * 任务优先级不限。
 
+系统状态
+-----------
+
+FreeRTOS中的任务一共有四种状态分别是运行状态（Running State），就绪状态（Ready State），阻塞状态（Blocked State），挂起状态（Suspended State）
+
+TCB_t的全称为Task Control Block，也就是任务控制块，这个结构体包含了一个任务所有的信息
+
 
 任务调度
 -----------
@@ -38,12 +48,11 @@ FreeRTOS对任务的调度采用时间片（time slicing）的调度方式。时
 
 时间片的大小由configTICK_RATE_HZ这个参数设置。如果configTICK_RATE_HZ设置为10HZ，则时间片的大小为100ms。configTICK_RATE_HZ的值由应用需求决定，通常设为100HZ（时间片大小相应为10ms）。
 
-vTaskList( char * pcWriteBuffer ) 这个函数可以打印出栈名、栈状态、优先级、栈的剩余空间
-
-FreeRTOSconfig.h要打开：
+vTaskList( char * pcWriteBuffer ) 这个函数可以打印出栈名、栈状态、优先级、栈的剩余空间，使用该功能FreeRTOSconfig.h要配置：
 
 * configUSE_TRACE_FACILITY 1
 * configUSE_STATS_FORMATTING_FUNCTIONS 1
+
 
 任务调度机制是嵌入式实时操作系统的一个重要概念，也是其核心技术。对于可剥夺型内核，优先级高的任务一旦就绪就能剥夺优先级较低任务的CPU使用权，提高了系统的实时响应能力。不同于μC/OS-II，FreeRTOS对系统任务的数量没有限制，既支持优先级调度算法也支持轮换调度算法，因此FreeRTOS采用双向链表而不是采用查任务就绪表的方法来进行任务调度。
 
@@ -52,8 +61,38 @@ FreeRTOSconfig.h要打开：
 其中一个可能出错的事情就是优先级反转(priorityinversion)，低优先级任务无意中阻止了具有更高优先级的任务。 如果你意识到这个陷阱，这也很容易地避免。但是，如果发现系统的响应性偶尔会出现延迟，则可能是因为优先级反转。使用Tracealyzer，可以通过绘制任务的响应时间来发现此类延迟。要查看此图中任何极端值的原因，只需双击以显示相应的任务执行跟踪。
 
 
-死锁
+任务间通讯
 -----------
+
+任务通讯的几种方式：queue，semaphores mutexes和event groups。
+
+其中semaphores mutexes都是基于队列的方式实现，notify机制和event groups最为类似，但是实现方式有较大差异。Notify机制是在每个任务中添加一个32位无符号字符标记，其他任务对该任务的通知。
+
+
+源文件解读
+-----------
+
+Demo 文件夹里面就是 FreeRTOS 针对不同的 MCU 提供的相关例程，其中就有 ST 的 F1、F4 和F7 的相关例程。
+
+License 文件夹里面就是 相关的许可信息，要用 FreeRTOS 做产品的得仔细看看，尤其是要出口的产品。
+
+Source 文件夹里面就是 FreeRTOS 的源码文件，include 文件夹是一些头文件，移植的时候是需要的，下面的这些.C 文件就是 FreeRTOS 的源码文件。
+
+portable 文件夹里面就是FreeRTOS系统和具体的硬件之间的连接桥梁！MemMang 这个文件夹是跟内存管理相关的，我们移植的时候是必须的。
+
+RVDS 文件夹针对不同的架构的 MCU 做了详细的分类，STM32F429 就参考 ARM_CM4F，打开 ARM_CM4F 文件夹，里面有两个文件，这两个文件就是我们移植的时候所需要的！
+
+
+FreeRTOS-Plus
+~~~~~~~~~~~~~~~
+
+里面也有 Demo 和 Source，Demo 文件夹里存放的肯定是一些例程， 而Source文件夹中存放的并不是 FreeRTOS 系统的源码，是在这个 FreeRTOS系统上另外增加的一些功能代码，比如 CLI、FAT、Trace 等等。
+
+问题总结
+-----------
+
+死锁
+~~~~~~~~~~~~
 
 死锁是两个或多个任务之间的循环依赖。
 
@@ -62,7 +101,7 @@ FreeRTOSconfig.h要打开：
 如果希望避免死锁，首先要注意的是，只有当任务试图同时持有两个资源时才会发生死锁。 因此：构建代码时，使任何任务在同一时间都不会持有多个共享资源，这样不会产生死锁。
 
 内存泄漏
------------
+~~~~~~~~~~~~
 
 通常不建议在嵌入式软件中进行动态内存分配，但有时会出于各种原因（对或错）进行动态内存分配。问题在于，如果使用它，则必须确保一旦内存块不再使用时，就释放每个已分配的内存块。如果在某些情况下遗漏了这一点，就会出现内存泄漏，并最终耗尽内存。请记住：即使在项目中禁止动态内存分配，也可能有第三方软件库或外部开发团队在不知情的情况下使用动态内存分配。
 
@@ -70,20 +109,14 @@ FreeRTOSconfig.h要打开：
 
 ARM对嵌入式操作系统进行了顶层设计，不同的操作系统要对他进行适配，这样更换操作系统就比较方便了，使用ARM提供的API编写的应用层程序，更换操作系统后是不需要修改的。
 
-任务间通讯
------------
 
-任务通讯的几种方式：queue，semaphores mutexes和event groups。
-
-其中semaphores mutexes都是基于队列的方式实现，notify机制和event groups最为类似，但是实现方式有较大差异。Notify机制是在每个任务中添加一个32位无符号字符标记，其他任务对该任务的通知。
-
-TCB_t的全称为Task Control Block，也就是任务控制块，这个结构体包含了一个任务所有的信息
-
-FreeRTOS中的任务一共有四种状态分别是运行状态（Running State），就绪状态（Ready State），阻塞状态（Blocked State），挂起状态（Suspended State）
-
-
-vs uCOS-III
+系统对比
 -------------
+
+对比uCOS-III
+~~~~~~~~~~~~~~
+
+从文件数量上来看 FreeRTOS 要比uC/OSII 和 uC/OSIII 小的多。
 
 uCOS-III中所有的内核对象（如任务控制块、消息队列、信号量等）都是静态创建的，需要用户提供。FreeRTOS中的内核对象支持动态和静态两种创建方法。
 

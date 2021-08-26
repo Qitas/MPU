@@ -29,4 +29,5 @@
 管道(Pipe)、命名管道(FIFO)、消息队列(Message Queue) 、信号量(Semaphore) 、共享内存（Shared Memory）；套接字（Socket）。
 
 网卡驱动程序
+
 首先，必须将协议栈完全初始化才能打开网络接收功能，接收中断必须将数据封装在PBUF中，然后交会给协议栈内核处理。其次，LWIP的全局变量（arp_table,netif_list,udp_pcbs等）确保赋初值0，否则容易一运行就崩溃。
