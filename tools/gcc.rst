@@ -142,4 +142,12 @@ SDCC
     :maxdepth: 1
 
     SDCC  <sdcc>
+    SDCC  <lint>
 
+Lint
+---------------
+
+.. toctree::
+    :maxdepth: 1
+
+    Lint  <lint>
