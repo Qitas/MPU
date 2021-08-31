@@ -30,11 +30,11 @@
     :caption: 理论知识
     :maxdepth: 1
 
-    模拟外设 <peripheral/analog>
-    数字外设 <peripheral/digital>
-    低速通信 <peripheral/normal>
-    高速通信 <peripheral/bus>
-    调试接口 <peripheral/debug>
+    模拟外设 <interface/analog>
+    数字外设 <interface/digital>
+    低速通信 <interface/normal>
+    高速通信 <interface/bus>
+    调试接口 <interface/debug>
 
 .. toctree::
     :caption: 编程语言
