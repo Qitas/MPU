@@ -6,16 +6,62 @@ USB
 .. contents::
     :local:
 
-tinyUSB
+概念
 -----------
+
+.. contents::
+    :local:
+
+子类
+~~~~~~~~~~~
+
+一个【传输】(控制、批量、中断、等时)：由多个【事务】组成；
+一个【事务】(IN、OUT、SETUP)：由一多个【Packet】组成。
+
+Packet
+^^^^^^^^^^^^
+
+包（Packet）是USB系统中信息传输的基本单元，所有数据都是经过打包后在总线上传输的。
+数据在 USB总线上的传输以包为单位，包只能在帧内传输。高速USB 总线的帧周期为125us，全速以及低速 USB 总线的帧周期为 1ms。
+帧的起始由一个特定的包（SOF 包）表示，帧尾为 EOF。EOF不是一个包，而是一种电平状态，EOF期间不允许有数据传输。
+
+包是USB总线上数据传输的最小单位，不能被打断或干扰，否则会引发错误。
+若干个数据包组成一次事务传输，一次事务传输也不能打断，属于一次事务传输的几个包必须连续，不能跨帧完成。一次传输由一次到多次事务传输构成，可以跨帧完成。
+
+USB包由五部分组成，即同步字段（SYNC）、包标识符字段（PID）、数据字段、循环冗余校验字段（CRC）和包结尾字段（EOP），包的基本格式如下图：
+.. image:: ./images/Packet.png
+    :target: https://blog.csdn.net/wwt18811707971/article/details/53368879
+.. image:: ./images/PID.png
+    :target: https://blog.csdn.net/wwt18811707971/article/details/53368879
+
+接口
+~~~~~~~~~~~
+
+USB使用一根屏蔽的4线电缆与网络上的设备进行互联。数据传输通过一个差分双绞线进行，这两根线分别标为D+和D-，另外两根线是Vcc和Ground，其中Vcc向USB设备供电。
+
+使用USB电源的设备称为总线供电设备，而使用自己外部电源的设备叫做自供电设备。
+
+
+子类
+~~~~~~~~~~~
+.. toctree::
+    :maxdepth: 1
+
+    CDC  <cdc>
+
+下层
+-----------
+
+.. contents::
+    :local:
+
+tinyUSB
+~~~~~~~~~~~~
 
 用于嵌入式系统的开源跨平台 USB 主机/设备堆栈，旨在实现无动态分配的内存安全和延迟所有中断事件的线程安全，然后在非ISR任务功能中进行处理。
 
 .. image:: ./images/tinyUSB.png
     :target: https://www.oschina.net/p/tinyusb
-
-堆栈协议
-~~~~~~~~~~~~
 
 从机堆栈
 ^^^^^^^^^^^^
@@ -42,9 +88,14 @@ tinyUSB
 * 集线器目前仅支持1级集线器
 
 
+上层
+-----------
+
+.. contents::
+    :local:
 
 Zadig
------------
+~~~~~~~~~~~
 
 Zadig是一个安装通用USB驱动程序的Windows应用程序，诸如WinUSB,libusb-win32/libusb0.sys,libusbK,可以帮助你快速的使用USB设备。
 
@@ -60,20 +111,7 @@ Zadig是一个安装通用USB驱动程序的Windows应用程序，诸如WinUSB,l
 
     $ git clone git://github.com/pbatard/libwdi
 
+Bus Hound
+~~~~~~~~~~~
 
-USB CDC
------------
-
-CDC(Communication Device Class)类是USB2.0标准下的一个子类，定义了通信相关设备的抽象集合。
-
-.. image:: ./images/usb.png
-    :target: https://blog.csdn.net/king_jie0210/article/details/76713938
-
-CDC类是USB组织定义的一类专门给各种通信设备（电信通信设备和中速网络通信设备）使用的USB子类。根据CDC类所针对通信设 备的不同，CDC类又被分成以下不同的模型：USB传统纯电话业务（POTS）模型，USB ISDN模型和USB网络模型。其中，USB传统纯电话业务模型，有可分为直接线控制模型（Direct Line Control Model）、抽象控制模型（Abstract Control Model）和USB电话模型（USB Telephone Model），如图1所示。本文所讨论的虚拟串口就属于USB传统纯电话业务模型下的抽象控制模型。
-
-通常一个CDC类又由两个接口子类组成通信接口类（Communication Interface Class）和数据接口类(Data Interface Class)。
-
-通过通信接口类对设备进行管理和控制，而通过数据接口类传送数据。这两个接口子类占有不同数量和类型的终端点 （Endpoints）。
-
-对于前面所述的不同CDC类模型，其所对应的接口的终端点需求也是不同的。如所需要讨论的抽象控制模型对终端点的需 求，通信接口类需要一个控制终端点（Control Endpoint）和一个可选的中断（Interrupt）型终端点，数据接口子类需要一个方向为输入（IN）的周期性（Isochronous）型终端 点和一个方向为输出（OUT）的周期性型终端点。其中控制终端点主要用于USB设备的枚举和虚拟串口的波特率和数据类型（数据位数、停止位和起始位）设置 的通信。输出方向的非同步终端点用于主机（Host）向从设备（Slave）发送数据，相当于传统物理串口中的TXD线（如果从单片机的角度看），输入方 向的非同步终端点用于从设备向主机发送数据，相当于传统物理串口中的RXD线。
 
