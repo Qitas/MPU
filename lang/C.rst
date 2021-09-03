@@ -3,7 +3,6 @@
 C系语言
 ===============
 
-
 .. contents::
     :local:
 
@@ -14,6 +13,28 @@ C 语言是一种通用的、面向过程式的计算机程序设计语言。197
 
 C 语言最初是用于系统开发工作，特别是组成操作系统的程序。由于 C 语言所产生的代码运行速度与汇编语言编写的代码运行速度几乎一样，所以采用 C 语言作为系统开发语言。
 
+相关概念
+~~~~~~~~~~~~~~~~~~~~
+.. toctree::
+    :caption:
+    :maxdepth: 1
+
+    数据结构 <data>
+    堆栈相关 <stack>
+    编译相关 <compile>
+
+关键词
+^^^^^^^^^^^^^^
+
+.. toctree::
+    :caption:
+    :maxdepth: 1
+
+    inline <inline>
+    static <static>
+    const <const>
+
+
 预编译
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -21,9 +42,11 @@ C 语言最初是用于系统开发工作，特别是组成操作系统的程序
 
 #是把宏参数转化为字符串的运算符，##是把两个宏参数连接的运算符
 
-*  #define STR(arg) #arg 则宏STR(hello)展开时为”hello”
-*  #define NAME(y) name_y 则宏NAME(1)展开时仍为name_y
-*  #define NAME(y) name_##y 则宏NAME(1)展开为name_1
+.. code-block:: bash
+
+    *  #define STR(arg) #arg 则宏STR(hello)展开时为”hello”
+    *  #define NAME(y) name_y 则宏NAME(1)展开时仍为name_y
+    *  #define NAME(y) name_##y 则宏NAME(1)展开为name_1
 
 
 
@@ -32,7 +55,6 @@ RAF策略
 
 RAF(Run and Fix) 是大量开发者和团队采用的开发策略，通过试错的方式降低精力投入，但在实际编写的代码最后可能会遗留下大麻烦，浪费不少于编码的时间进行修复
 
-
 * 增加在程序构思阶段的时间投入
 * 采用流程图和伪代码，梳理程序逻辑
 * 在纸上投入的时间多于电脑
@@ -40,44 +62,31 @@ RAF(Run and Fix) 是大量开发者和团队采用的开发策略，通过试错
 * 深思后再编程
 
 
-.. toctree::
-    :caption: C关键词
-    :maxdepth: 1
-
-    inline <inline>
-    static <static>
-    const <const>
-
 
 C语言工具
------------
+~~~~~~~~~~~~~~
 
 格式化
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 clang-format，它是基于clang的一个命令行工具，能够自动化格式C/C++/Obj-C代码，支持多种代码风格：Google, Chromium, LLVM, Mozilla, WebKit，也支持自定义风格（通过编写.clang-format文件）很方便的同意代码格式。
 
 静态检查
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 * 功能度：Cppcheck > TscanCode > Flawfinder
 * 友好度：TscanCode > Cppcheck > Flawfinder
 * 易用性：TscanCode > Cppcheck > Flawfinder
 
 
-.. toctree::
-    :caption: C编译
-    :maxdepth: 1
-
-    data <data>
-    stack <stack>
-    compile <compile>
 
 C++语言
 -----------
 
 C++ 几乎是C的超集，只有少量功能C++不支持。
 
+.. contents::
+    :local:
 
 相关区别
 ~~~~~~~~~~~~~~
