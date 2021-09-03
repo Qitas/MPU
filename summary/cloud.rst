@@ -7,13 +7,14 @@
 .. contents::
     :local:
 
-平台协议
+通信协议
 -----------
 
 .. toctree::
     :maxdepth: 1
 
     MQTT <mqtt>
+    Modbus <modbus>
 
 
 阿里云对接
