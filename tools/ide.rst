@@ -17,7 +17,7 @@ KEIL MDK集成了业内最领先的技术，包括uVision3、uVision4、uVision5
 Keil MDK可以自动配置启动代码，集成Flash烧写模块，强大的Simulation设备模拟，性能分析等功能，与ARM之前的工具包ADS等相比，ARM编译器的最新版本可将性能改善超过20％以上。
 　　
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
     keil  <keil>
 
@@ -30,12 +30,11 @@ IAR Systems以其高度优化的编译器而闻名。每个C/C++编译器不仅�
 
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
     IAR  <iar>
 
-
-对比
+总结
 ------------
 
 MDK vs IAR

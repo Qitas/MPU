@@ -42,6 +42,7 @@
 
     C系语言 <lang/C>
     汇编语言 <lang/asm>
+    脚本语言 <lang/script>
 
 .. toctree::
     :caption: 开发工具
@@ -73,5 +74,6 @@
     :maxdepth: 1
 
     PID控制 <summary/pid>
-    云对接 <summary/cloud>
+    GUI设计 <summary/gui>
+    平台对接 <summary/cloud>
 
