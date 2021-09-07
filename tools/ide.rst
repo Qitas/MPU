@@ -34,6 +34,16 @@ IAR Systems以其高度优化的编译器而闻名。每个C/C++编译器不仅�
 
     IAR  <iar>
 
+CubeIDE
+---------------
+
+
+.. toctree::
+    :maxdepth: 2
+
+    CubeIDE  <cubeide>
+
+
 总结
 ------------
 
