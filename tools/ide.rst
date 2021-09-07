@@ -37,9 +37,8 @@ IAR Systems以其高度优化的编译器而闻名。每个C/C++编译器不仅�
 CubeIDE
 ---------------
 
-
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     CubeIDE  <cubeide>
 
@@ -47,8 +46,16 @@ CubeIDE
 总结
 ------------
 
+.. contents::
+    :local:
+
+对比
+~~~~~~~~~~~~
+
+
+
 MDK vs IAR
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 一般来说，如果主要是采用C，并且也不会有太多的library需要连接，MDK和IAR都能胜任。不过这种情形就比较推荐IAR，因为其非常简洁，上手也快，代码层次也能清晰明了。
 
@@ -62,3 +69,7 @@ MDK vs IAR
 * 6、默认状态，MDK的工具栏功能比较多，有点繁杂；IAM的比较简洁，但相对，也比较单薄。
 * 7、MDK的C++有std::这个命名空间；IAR下面的所有容器和算法，都不采用std命名空间
 * 8、MDK的程序文件，最后必须要有一个新的空行，否则会有编译警告：warning:  #1-D: last line of file ends without a newline
+
+MDK vs GCC
+^^^^^^^^^^^^
+

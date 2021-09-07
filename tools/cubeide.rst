@@ -1,6 +1,6 @@
 .. _cubeide:
 
-stm32CubeIDE
+STM32CubeIDE
 ==============
 
 .. contents::

@@ -6,12 +6,33 @@ IAR
 .. contents::
     :local:
 
-ARM
+IAR ARM
 -----------
 
-STM8
+
+
+IAR 8051
 -----------
 
+
+常见问题
+~~~~~~~~~
+
+Warning[Pa082]: undefined behavior: the order of volatile accesses is undefined in this statement
+
+``运算符两边都是volatile变量的警告``
+
+报警的这条语句中有两个或两个以上被 volatile 定义过的变量。编译器会认为有问题。
+用volatile修饰的变量一般不直接参与运算，volatile就以为着这个变量在运算过程中有可能已经改变了
+
+
+Error[e16]: Segment ISTACK (size: 0xc0 align: 0) is too long for segment definition. At least 0xe more bytes needed. The problem occurred while processing the segment placement command
+
+解决：依次打开Project -> Options -> General Option -> Target，在Target标签中找到“Number of virtual”，原来默认为16，修改为8。
+
+
+IAR STM8
+-----------
 
 .. code-block:: bash
 
@@ -39,25 +60,3 @@ IAR安装多个不同的版本，会存在点击eww文件自动通过上次打�
     :maxdepth: 1
 
     STVD <stvd>
-
-
-
-8051
------------
-
-
-常见问题
-~~~~~~~~~
-
-Warning[Pa082]: undefined behavior: the order of volatile accesses is undefined in this statement
-
-``运算符两边都是volatile变量的警告``
-
-报警的这条语句中有两个或两个以上被 volatile 定义过的变量。编译器会认为有问题。
-用volatile修饰的变量一般不直接参与运算，volatile就以为着这个变量在运算过程中有可能已经改变了
-
-
-Error[e16]: Segment ISTACK (size: 0xc0 align: 0) is too long for segment definition. At least 0xe more bytes needed. The problem occurred while processing the segment placement command
-
-解决：依次打开Project -> Options -> General Option -> Target，在Target标签中找到“Number of virtual”，原来默认为16，修改为8。
-
