@@ -46,11 +46,21 @@ C 语言最初是用于系统开发工作，特别是组成操作系统的程序
 
 .. code-block:: bash
 
-    *  #define STR(arg) #arg 则宏STR(hello)展开时为”hello”
-    *  #define NAME(y) name_y 则宏NAME(1)展开时仍为name_y
-    *  #define NAME(y) name_##y 则宏NAME(1)展开为name_1
+    #define STR(arg) #arg 则宏STR(hello)展开时为”hello”
+    #define NAME(y) name_y 则宏NAME(1)展开时仍为name_y
+    #define NAME(y) name_##y 则宏NAME(1)展开为name_1
 
+.. code-block:: bash
+    #define Conn(x,y) x##y
+    #define ToChar(x) #@x
+    #define ToString(x) #x
 
+* int  n = Conn(123,456);  结果就是n=123456;
+* char* str = Conn("asdf", "adf")结果就是 str = "asdfadf";
+* char a = ToChar(1);结果就是a='1';
+做个越界试验char a = ToChar(123);结果是a='3';但是如果你的参数超过四个字符，编译器就给给你报错了！error C2015: too many characters in constant ：P
+
+* char* str = ToString(123132);就成了str="123132";
 
 开发策略
 ~~~~~~~~~~~~~~
