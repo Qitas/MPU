@@ -67,6 +67,14 @@ fromelf --bin "$L@L.axf" --output "$L@L.bin"
 
 勾选了“use cross-module optimization//跨模块优化，KEIL每次都要编译全部文件并且每个文件编译三次
 
+使用技巧
+~~~~~~~~~
+
+HardFault_Handler
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+https://blog.csdn.net/electrocrazy/article/details/78173558
+
 
 常见问题
 ~~~~~~~~~
