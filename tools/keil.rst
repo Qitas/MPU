@@ -42,6 +42,10 @@ RAM就是运行内存，掉电数据就丢失；通常保存着堆、栈、bss�
 另外，可以通过单独设置 --loop_optimization_level=option 来控制循环展开的优化等级。
 
 
+.. warning::
+    勾选了“use cross-module optimization//跨模块优化，KEIL每次都要编译全部文件并且每个文件编译三次
+
+
 编程算法FLM
 ~~~~~~~~~~~~
 
@@ -55,6 +59,7 @@ MDK在下载程序之前需要都在Debug设置的Flash Download子选项卡选�
 格式输出
 ~~~~~~~~~
 
+
 使用fromelf工具,通过上面的示例,想必都能很轻松的生成bin文件,今天补写一下fromelf工具的基本命令:
 
     --bin:输出二进制文件
@@ -63,15 +68,34 @@ MDK在下载程序之前需要都在Debug设置的Flash Download子选项卡选�
     --output <file>:file为输出文件名
     -o<file>:这个是armcc编译器命令,也可用于这里,指定输出文件的名字
 
-fromelf --bin "$L@L.axf" --output "$L@L.bin"
+.. code-block:: bash
 
-勾选了“use cross-module optimization//跨模块优化，KEIL每次都要编译全部文件并且每个文件编译三次
+    fromelf --bin "$L@L.axf" --output "$L@L.bin"
+    fromelf.exe --bin -o "$L@L.bin" "#L"
+
+
+fromelf
+^^^^^^^^^^^
+
+romelf.exe绝对路径+空格+--bin(注意是两个短横的)+空格+--output(两短横)+空格+../输出目录相对路径+空格+名字.bin+空格+../输出目录相对路径+空格+名字.axf
+
+* fromelf.exe --bin --output .\output\@test2.bin .\output\@test2.axf
+* fromelf.exe --bin --output ..@test2.bin ..@test2.axf
+
+fromelf 中$L、@L、L用来指定对应的路径或名称
+
+* L是指axf文件路径加文件名，例如 D:\qitas\out\test.axf
+* $L是指axf的文件路径不含文件名(包含最后“\”)，例如 D:\qitas\out\
+* @L是指axf的不含axf的后缀文件名，例如 test
+* #L的 # 表示引用的是本身，#L即工程的输出文件
+
+.. note::
+    $K表示的是KEIL MDK工具链的安装路径
 
 使用技巧
 ~~~~~~~~~
 
-HardFault_Handler
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* HardFault_Handler
 
 https://blog.csdn.net/electrocrazy/article/details/78173558
 
@@ -89,24 +113,23 @@ MDK偶尔会出现错误提示“Error: Encountered an improper argument”。�
 
 
 
-WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
 
 如果你在用C51编译器出现上面的警告，这个只是初学者和粗心者才会犯的错误：没把C文件添加到项目中！
 另外，还有可能是因为存在没有被调用的已经定义的函数，或者相关的已经定义的变量没有使用。
 
-WARNING L15: MULTIPLE CALL TO SEGMENT
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* WARNING L15: MULTIPLE CALL TO SEGMENT
 
 该警告表示连接器发现有一个函数可能会被主函数和一个中断服务程序(或者调用中断服务程序的函数)同时调用，或者同时被多个中断服务程序调用。
 
 出现这种警告的原因一般有两种：
 
-* 第一：这个函数是不可重入函数，当该函数运行时可能被打断，打断后该函数又被再次运行，从而造成函数内部数据丢失；
-* 第二：该函数的内部变量数据所占有的内存在link时被连接器认为是可覆盖的，因此在连接时进行了数据覆盖优化，但是连接器同时发现该函数在运行时被打断后，其他函数（如中断服务子程序）的运行造成了该函数的数据被覆盖。
+第一,这个函数是不可重入函数，当该函数运行时可能被打断，打断后该函数又被再次运行，从而造成函数内部数据丢失；
 
-WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+第二,该函数的内部变量数据所占有的内存在link时被连接器认为是可覆盖的，因此在连接时进行了数据覆盖优化，但是连接器同时发现该函数在运行时被打断后，其他函数（如中断服务子程序）的运行造成了该函数的数据被覆盖。
+
+
+* WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
 
 定义的函数没有调用而已
 
