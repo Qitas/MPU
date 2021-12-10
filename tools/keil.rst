@@ -6,7 +6,7 @@ Keil
 .. contents::
     :local:
 
-Keil MDK
+MDK
 ------------
 
 生成文件
@@ -135,7 +135,7 @@ MDK偶尔会出现错误提示“Error: Encountered an improper argument”。�
 
 
 
-Keil C51
+C51
 -----------
 
 .. contents::
