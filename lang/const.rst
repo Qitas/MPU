@@ -1,9 +1,11 @@
-.. _lan_c_const:
+.. _c_const:
 
 const
 ===============
 
-C语言关键字const就是用来限定一个变量不允许被改变的修饰符（Qualifier）。ANSI C规定数组定义时长度必须是“常量”（C99标准，数组下标可以用变量来表示），“只读变量”也是不可以的，“常量”不等于“不可变的变量”。但是在C++中，局部数组是可以使用变量作为其长度的。
+C语言关键字const就是用来限定一个变量不允许被改变的修饰符（Qualifier）。
+
+ANSI C规定数组定义时长度必须是“常量”（C99标准，数组下标可以用变量来表示），“只读变量”也是不可以的，“常量”不等于“不可变的变量”。但是在C++中，局部数组是可以使用变量作为其长度的。
 
 .. contents::
     :local:
@@ -22,18 +24,18 @@ const使用的基本形式：
 
 .. code-block:: bash
 
-    * const int nValue；                //int是const
-    * const char *pContent;             //char是const, pContent可变
-    * const char * const pContent;      //pContent和*pContent都是const
+    const int nValue；                //int是const
+    const char *pContent;             //char是const, pContent可变
+    const char * const pContent;      //pContent和*pContent都是const
 
 2）const在后面
 
 .. code-block:: bash
 
-    * int const nValue;             //nValue是const
-    * char const * pContent;        //*pContent是const, pContent可变
-    * char* const pContent;         //pContent是const,*pContent可变
-    * char const* const pContent;   //pContent和*pContent都是const
+    int const nValue;             //nValue是const
+    char const * pContent;        //*pContent是const, pContent可变
+    char* const pContent;         //pContent是const,*pContent可变
+    char const* const pContent;   //pContent和*pContent都是const
 
 一个简单的判断方法：指针运算符*，是从右到左，那么如：char const * pContent，可以理解为char const (* pContent)，即* pContent为const，而pContent则是可变的。
 
@@ -56,3 +58,14 @@ p2是const，是前一个const修饰的，*p1也被前一个const修饰，而p1�
 p1是const，（* const p1）是整体，所以const不修饰p2。
 
 指针指向及其指向变量的值的变化，const在*的左边，则指针指向的变量的值不可直接通过指针改变（可以通过其他途径改变）；在*的右边，则指针的指向不可变。简记为“左定值，右定向”。
+
+
+const默认修饰左边的内容，如果左边没有东西则修饰其右边的内容
+
+* const int *a      //const左边没有东西，因此const修饰int，则指针指向的内容不可通过指针修改
+* int const *a      //const左边有东西，因此const修饰int
+* int* const a      //const修饰*，即指针不能改变指向
+* const int * const a  //第一个const修饰int，第二个const修饰*，即指针指向内容不可修改，也不能改变指针指向
+
+.. hint::
+    若 * 在const左边，不能改变指针指向，*在const右边，不能修改所指的值
