@@ -17,6 +17,20 @@ USB协议版本有USB1.0、USB1.1、USB2.0、USB3.1等，USB2.0目前比较常�
 
     USB  <usb>
 
+.. _ethernet:
+
+Ethernet
+-----------
+
+`Xin推荐 <https://docs.soc.xin/for/iot.html#id8>`_
+
+
+.. toctree::
+    :maxdepth: 1
+
+    LwIP  <LwIP>
+
+
 SerDes
 -----------
 
