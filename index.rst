@@ -53,12 +53,11 @@
     GCC <tools/gcc>
 
 .. toctree::
-    :caption: 系统相关
+    :caption: 系统平台
     :maxdepth: 1
 
-    实时系统 <os/rtos>
-    操作系统 <os/index>
-    虚拟化 <os/docker>
+    边缘系统 <rtos/index>
+    中心系统 <os/index>
 
 .. toctree::
     :caption: 应用实践
