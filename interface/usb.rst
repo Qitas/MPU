@@ -168,6 +168,17 @@ USB有5种标准描述符：设备描述符 、配置描述符、字符描述符
 .. contents::
     :local:
 
+RL-USB
+~~~~~~~~~~~~
+
+` Real-Time USB Library (Keil) <https://www.keil.com/support/man/docs/rlarm/rlarm_usb.htm>`_
+
+.. image:: ./images/usbblockdiagr.png
+    :target: https://www.keil.com/support/man/docs/rlarm/rlarm_usb.htm
+
+主要的布道推广者为 ` armfly <https://www.armbbs.cn/forum.php?mod=forumdisplay&fid=47>`_
+
+
 tinyUSB
 ~~~~~~~~~~~~
 
