@@ -2,18 +2,13 @@
 从芯开始
 ===========================
 
-**芯思想的开源者!**
+**嵌入式工程师知识体系梳理**
 
 `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
 `GitHub <https://GitHub.com/Qitas>`_ |
 `Twitter <https://twitter.com/QitasTang>`_ |
 `Facebook <https://www.facebook.com/qitast>`_
 
-
-.. toctree::
-    :maxdepth: 1
-
-    背景简介 <pre>
 
 .. toctree::
     :caption: 理论知识
@@ -65,3 +60,4 @@
     GUI设计 <summary/gui>
     平台对接 <summary/cloud>
 
+通过对工程师所需要的知识体系进行梳理和打磨，能够为批量化制造工程师数字分身提供相关参考和指导。
