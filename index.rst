@@ -1,8 +1,8 @@
 
-从芯开始
+数字分身
 ===========================
 
-**嵌入式工程师知识体系梳理**
+**嵌入式工程师数字分身知识梳理**
 
 `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
 `GitHub <https://GitHub.com/Qitas>`_ |
@@ -33,8 +33,8 @@
     :maxdepth: 1
 
     IDE <tools/ide>
-    EDA <tools/eda>
     GCC <tools/gcc>
+    KiCad  <tools/kicad>
 
 .. toctree::
     :caption: 系统平台
@@ -44,7 +44,7 @@
     中心系统 <os/index>
 
 .. toctree::
-    :caption: 应用实践
+    :caption: 应用领域
     :maxdepth: 1
 
     物联网 <app/iot>
@@ -53,7 +53,7 @@
     仪器仪表 <app/meter>
 
 .. toctree::
-    :caption: 项目总结
+    :caption: 项目实践
     :maxdepth: 1
 
     PID控制 <summary/pid>
