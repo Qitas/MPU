@@ -165,7 +165,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Qitas'
+htmlhelp_basename = 'Knowledge'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -214,7 +214,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'Qitas', u'Knowledge Domain', [u'Qitas'], 1)
+    ('index', 'EE Knowledge', u'Knowledge Domains', [u'Qitas'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -266,5 +266,5 @@ html_context = {
     "github_user": "qitas",
     "github_repo": "docs",
     "github_version": "master",
-    "conf_py_path": "/"
+    "conf_py_path": "."
 }
