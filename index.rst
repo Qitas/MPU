@@ -2,7 +2,7 @@
 Knowledge Domain
 ===========================
 
-**嵌入式开发知识体系管理，技术栈维护**
+**嵌入式开发知识框架 & 技术栈维护**
 
 .. only:: latex
 
@@ -11,38 +11,37 @@ Knowledge Domain
 ------------------  ------------------  ------------------
 `芯片知识`_          `编程能力`_         `开发工具`_
 ------------------  ------------------  ------------------
-|系统环境|_          |应用领域|_         |实践总结|_
+|运行环境|_          |应用领域|_         |实践总结|_
 ------------------  ------------------  ------------------
-`系统环境`_          `应用领域`_         `实践总结`_
+`运行环境`_          `应用领域`_         `实践总结`_
 ==================  ==================  ==================
 
 .. |芯片知识| image:: _static/interface.png
 .. _芯片知识: interface/index.html
 
 .. |编程能力| image:: _static/api-reference.png
-.. _编程能力: rtos/index.html
+.. _编程能力: lang/index.html
 
 .. |开发工具| image:: _static/get-started.png
-.. _开发工具: rtos/index.html
+.. _开发工具: tools/index.html
 
-.. |系统环境| image:: _static/api-guides.png
-.. _系统环境: rtos/index.html
+.. |运行环境| image:: _static/api-guides.png
+.. _运行环境: env/index.html
 
 .. |应用领域| image:: _static/contribute.png
-.. _应用领域: rtos/index.html
+.. _应用领域: app/index.html
 
 .. |实践总结| image:: _static/resources.png
-.. _实践总结: rtos/index.html
+.. _实践总结: summary/index.html
 
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     通信接口 <interface/index>
     编程能力 <lang/index>
     开发工具 <tools/index>
-    实时系统 <rtos/index>
-    操作系统 <os/index>
+    运行环境 <env/index>
     应用领域 <app/index>
     实践总结 <summary/index>
 

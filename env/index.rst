@@ -1,4 +1,4 @@
-.. _os:
+.. _运行环境:
 
 操作系统
 ===============
@@ -6,17 +6,17 @@
 .. contents::
     :local:
 
-运行环境
------------
-
 .. toctree::
     :maxdepth: 1
 
+    RTOS <rtos>
     Linux <linux>
     Window <window>
     Docker <docker>
+    Android <android>
 
-应用开发
+
+上层应用
 -----------
 
 .. toctree::
