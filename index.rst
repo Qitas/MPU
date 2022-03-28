@@ -2,27 +2,27 @@
 Knowledge Domain
 ===========================
 
-**嵌入式开发知识体系管理**
+**嵌入式开发知识体系管理，技术栈维护**
 
 .. only:: latex
 
 ==================  ==================  ==================
-|基础知识|_          |编程能力|_         |开发工具|_
+|芯片知识|_          |编程能力|_         |开发工具|_
 ------------------  ------------------  ------------------
-`基础知识`_          `编程能力`_         `开发工具`_
+`芯片知识`_          `编程能力`_         `开发工具`_
 ------------------  ------------------  ------------------
 |系统环境|_          |应用领域|_         |实践总结|_
 ------------------  ------------------  ------------------
 `系统环境`_          `应用领域`_         `实践总结`_
 ==================  ==================  ==================
 
-.. |基础知识| image:: _static/get-started.png
-.. _基础知识: rtos/index.html
+.. |芯片知识| image:: _static/interface.png
+.. _芯片知识: interface/index.html
 
 .. |编程能力| image:: _static/api-reference.png
 .. _编程能力: rtos/index.html
 
-.. |开发工具| image:: _static/hw-reference.png
+.. |开发工具| image:: _static/get-started.png
 .. _开发工具: rtos/index.html
 
 .. |系统环境| image:: _static/api-guides.png
@@ -36,14 +36,9 @@ Knowledge Domain
 
 
 .. toctree::
-    :caption: 基础知识
-    :maxdepth: 1
+    :maxdepth: 2
 
-    模拟外设 <interface/analog>
-    数字外设 <interface/digital>
-    低速通信 <interface/normal>
-    高速通信 <interface/bus>
-    调试接口 <interface/debug>
+    通信接口 <interface/index>
 
 .. toctree::
     :caption: 编程能力
