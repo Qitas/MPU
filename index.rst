@@ -1,17 +1,11 @@
 
-数字分身
+Knowledge Domain
 ===========================
 
 **嵌入式工程师数字分身知识梳理**
 
-`LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
-`GitHub <https://GitHub.com/Qitas>`_ |
-`Twitter <https://twitter.com/QitasTang>`_ |
-`Facebook <https://www.facebook.com/qitast>`_
-
-
 .. toctree::
-    :caption: 理论知识
+    :caption: 基础知识
     :maxdepth: 1
 
     模拟外设 <interface/analog>
@@ -21,7 +15,7 @@
     调试接口 <interface/debug>
 
 .. toctree::
-    :caption: 编程语言
+    :caption: 编程能力
     :maxdepth: 1
 
     C系语言 <lang/C>
@@ -37,7 +31,7 @@
     KiCad  <tools/kicad>
 
 .. toctree::
-    :caption: 系统平台
+    :caption: 系统环境
     :maxdepth: 1
 
     边缘系统 <rtos/index>
@@ -53,11 +47,10 @@
     仪器仪表 <app/meter>
 
 .. toctree::
-    :caption: 项目实践
+    :caption: 实践总结
     :maxdepth: 1
 
     PID控制 <summary/pid>
     GUI设计 <summary/gui>
     平台对接 <summary/cloud>
 
-通过对工程师所需要的知识体系进行梳理和打磨，能够为批量化制造工程师数字分身提供相关参考和指导。
