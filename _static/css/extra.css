@@ -571,17 +571,17 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   margin-right: 5px;
 }
 
-.nav .nav-pio-tech {
-  background-color: #4614d1;
+.nav .nav-user {
+  background-color: #83af9b;
   font-weight: bold;
 }
 
-.nav .nav-pio-tech:hover {
-  background-color: #3451f5;
+.nav .nav-user:hover {
+  background-color: hsl(261, 90%, 49%);
   font-weight: bold;
 }
 
-.nav .nav-pio-tech > a {
+.nav .nav-user > a {
   color: white !important;
   font-weight: bold;
 }

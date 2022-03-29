@@ -2,7 +2,7 @@
 Knowledge Domain
 ===========================
 
-**嵌入式开发知识框架 & 技术栈维护**
+**嵌入式领域知识结构和技术栈框架**
 
 .. only:: latex
 
@@ -36,6 +36,7 @@ Knowledge Domain
 
 
 .. toctree::
+    :caption: 目录
     :maxdepth: 1
 
     通信接口 <interface/index>
