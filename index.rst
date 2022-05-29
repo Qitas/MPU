@@ -15,7 +15,7 @@ Knowledge Domain
 ==================  ==================  ==================
 
 .. |芯片知识| image:: _static/interface.png
-.. _芯片知识: interface/index.html
+.. _芯片知识: lang/index.html
 
 .. |编程能力| image:: _static/api-reference.png
 .. _编程能力: lang/index.html
@@ -37,7 +37,6 @@ Knowledge Domain
     :caption: 章节目录
     :maxdepth: 1
 
-    通信接口 <interface/index>
     编程能力 <lang/index>
     开发工具 <tools/index>
     运行环境 <env/index>
