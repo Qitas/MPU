@@ -36,7 +36,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Knowledge Domain'
+project = u'Knowledge'
 copyright = u'2019 - {} www.qitas.cn'.format(current_year)
 
 # The version info for the project you're documenting, acts as replacement for
@@ -214,7 +214,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'EE Knowledge', u'Knowledge Domains', [u'Qitas'], 1)
+    ('index', 'Knowledge', u'Knowledge', [u'Qitas'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -227,8 +227,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    ('index', 'Qitas', u'Knowledge Domain',
-    u'Qitas', 'Qitas', 'Knowledge Domain', 'Miscellaneous'),
+    ('index', 'Qitas', u'Knowledge',
+    u'Qitas', 'Qitas', 'Knowledge', 'Miscellaneous'),
 ]
 
 # Documents to append as an appendix to all manuals.

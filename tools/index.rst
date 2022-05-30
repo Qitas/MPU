@@ -11,4 +11,3 @@
 
     IDE <ide>
     GCC <gcc>
-    KiCad  <kicad>
