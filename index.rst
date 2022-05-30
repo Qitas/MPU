@@ -24,7 +24,9 @@ Knowledge
 .. |实践总结| image:: _static/images/resources.png
 .. _实践总结: summary/index.html
 
+关于芯片相关的知识框架全部迁移到了 `芯文档 <https://docs.SoC.xin>`_ 关于开源和软件架构相关知识归到 `OS-Q <https://docs.OS-Q.com>`_
 
+在本文中，目前更多是一些个人感悟和各种杂散不好归类的知识。
 
 .. toctree::
     :caption: 章节目录
@@ -35,6 +37,3 @@ Knowledge
     产品架构 <product/index>
     经验总结 <summary/index>
 
-关于芯片相关的知识框架全部迁移到了 `芯文档 <https://docs.SoC.xin>`_ 关于开源和软件架构相关知识归到 `OS-Q <https://docs.OS-Q.com>`_
-
-在本文中，目前更多是一些个人感悟和各种杂散不好归类的知识，还没有很好形成体系
