@@ -1,34 +1,26 @@
 
-Knowledge Domain
+Knowledge
 ===========================
 
+.. image:: _static/images/all.png
+    :target: https://www.qitas.cn
+
 ==================  ==================  ==================
-|芯片知识|_          |编程能力|_         |开发工具|_
+|编程能力|_          |开发工具|_         |实践总结|_
 ------------------  ------------------  ------------------
-`芯片知识`_          `编程能力`_         `开发工具`_
-------------------  ------------------  ------------------
-|运行环境|_          |应用领域|_         |实践总结|_
-------------------  ------------------  ------------------
-`运行环境`_          `应用领域`_         `实践总结`_
+`编程能力`_          `开发工具`_         `实践总结`_
 ==================  ==================  ==================
 
-.. |芯片知识| image:: _static/interface.png
-.. _芯片知识: lang/index.html
 
-.. |编程能力| image:: _static/api-reference.png
+.. |编程能力| image:: _static/images/api.png
 .. _编程能力: lang/index.html
 
-.. |开发工具| image:: _static/get-started.png
+.. |开发工具| image:: _static/images/contribute.png
 .. _开发工具: tools/index.html
 
-.. |运行环境| image:: _static/api-guides.png
-.. _运行环境: env/index.html
-
-.. |应用领域| image:: _static/contribute.png
-.. _应用领域: app/index.html
-
-.. |实践总结| image:: _static/resources.png
+.. |实践总结| image:: _static/images/resources.png
 .. _实践总结: summary/index.html
+
 
 
 .. toctree::
@@ -37,6 +29,5 @@ Knowledge Domain
 
     编程能力 <lang/index>
     开发工具 <tools/index>
-    应用领域 <app/index>
     实践总结 <summary/index>
 
