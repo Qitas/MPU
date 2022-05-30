@@ -1,1 +1,1 @@
-# [Knowledge Domain](https://github.com/qitas/docs)
+# [Knowledge](https://github.com/qitas/docs)
