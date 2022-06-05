@@ -3,17 +3,14 @@
 产品架构
 ===============
 
-.. image:: ../_static/images/qitas.png
-
+.. contents::
+    :local:
+    :depth: 1
 
 .. toctree::
     :maxdepth: 1
 
     云平台 <cloud>
-
-.. contents::
-    :local:
-    :depth: 1
 
 网络通信
 -----------

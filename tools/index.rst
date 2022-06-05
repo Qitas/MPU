@@ -3,11 +3,12 @@
 开发工具
 ===============
 
-.. contents::
-    :local:
-
 .. toctree::
     :maxdepth: 1
 
     IDE <ide>
     GCC <gcc>
+
+.. contents::
+    :local:
+    :depth: 1

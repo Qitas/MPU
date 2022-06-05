@@ -5,7 +5,7 @@ IDE
 
 .. contents::
     :local:
-
+    :depth: 1
 
 Keil
 ---------------
@@ -46,13 +46,19 @@ STM32CubeIDE 是 ST 公司基于 Eclipse/CDT 框架和 GUN GCC 工具链制作�
     STM32CubeIDE  <cubeide>
 
 
+Embedded Studio
+-----------------
+``SEGGER`` ``RISC-V``
+
+`Embedded Studio <https://www.segger.com/downloads/embedded-studio/>`_ 是一款使用C和C++语言的精简的、专业的嵌入式开发工具。它配备了强大的项目构建和管理系统，具有代码自动完成和折叠功能的源代码编辑器，以及分包管理系统用于下载和安装开发板和器件的软件支持包。它还包括SEGGER高度优化的运行时库emRun、浮点库emFloat以及SEGGER的智能链接器，所有这些都为资源有限的嵌入式系统量身定做。其内置调试器包括了所有必要的功能，与J-Link配合使用，提供了卓越的性能和稳定性。
+
 应用总结
 ------------
 
 .. contents::
     :local:
 
-差异对比
+对比
 ~~~~~~~~~~~~
 
 C51 vs EW8051
@@ -74,7 +80,3 @@ MDK vs EWARM
 * 7、MDK的C++有std::这个命名空间；IAR下面的所有容器和算法，都不采用std命名空间
 * 8、MDK的程序文件，最后必须要有一个新的空行，否则会有编译警告：warning:  #1-D: last line of file ends without a newline
 
-MDK vs GCC
-^^^^^^^^^^^^
-
-编译工具 ARMCC
