@@ -37,7 +37,7 @@ STC实现
 假设STC主频为12MHz，1.25us即0.00000125/(1/12M)=15个周期，也就是说我们要在15个周期内执行一定数量的指令来完成IO置高、IO置低、数据移位、跳转等所有必要的操作。
 
 .. image:: images/STC.png
-    :target: https://docs.soc.xin/STC/STC8.html
+    :target: https://doc.soc.xin/STC/STC8.html
 
 
 

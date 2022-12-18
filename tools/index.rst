@@ -8,7 +8,5 @@
 
     IDE <ide>
     GCC <gcc>
+    Editor <editor>
 
-.. contents::
-    :local:
-    :depth: 1

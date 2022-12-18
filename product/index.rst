@@ -3,10 +3,6 @@
 产品架构
 ===============
 
-.. contents::
-    :local:
-    :depth: 1
-
 .. toctree::
     :maxdepth: 1
 

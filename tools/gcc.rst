@@ -129,8 +129,10 @@ EABI：嵌入式ABI。嵌入式应用二进制接口指定了文件格式、数�
 存储访问
 -------------
 
-_no_init用于禁止系统启动时的变量初始化，我想知道，什么情况下需要用这个关键字使系统禁止变量的初始化，禁止变量初始化用在什么场合，为什么要这样做，有什么意义吗？
-另外__ramfunc也有类似疑问，书上只是说用__ramfunc定义的函数企图访问ROM将导致编译器产生警告，请问什么情况下才需要用__ramfunc
+_no_init用于禁止系统启动时的变量初始化
+
+用__ramfunc定义的函数企图访问ROM将导致编译器产生警告
+
 arm-none-eabi-gcc（ARM architecture，no vendor，not target an operating system，complies with the ARM EABI）
 用于编译 ARM 架构的裸机系统（包括 ARM Linux 的 boot、kernel，不适用编译 Linux 应用 Application），一般适合 ARM7、Cortex-M 和 Cortex-R 内核的芯片使用，所以不支持那些跟操作系统关系密切的函数，比如fork(2)，他使用的是 newlib 这个专用于嵌入式系统的C库。
 

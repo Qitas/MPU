@@ -52,13 +52,14 @@ Embedded Studio
 
 `Embedded Studio <https://www.segger.com/downloads/embedded-studio/>`_ 是一款使用C和C++语言的精简的、专业的嵌入式开发工具。它配备了强大的项目构建和管理系统，具有代码自动完成和折叠功能的源代码编辑器，以及分包管理系统用于下载和安装开发板和器件的软件支持包。它还包括SEGGER高度优化的运行时库emRun、浮点库emFloat以及SEGGER的智能链接器，所有这些都为资源有限的嵌入式系统量身定做。其内置调试器包括了所有必要的功能，与J-Link配合使用，提供了卓越的性能和稳定性。
 
-应用总结
+Summary
 ------------
 
 .. contents::
     :local:
+    :depth: 1
 
-对比
+Comparison
 ~~~~~~~~~~~~
 
 C51 vs EW8051
