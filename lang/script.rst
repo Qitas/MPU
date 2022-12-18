@@ -1,10 +1,13 @@
 .. _lan_script:
 
-脚本语言
+Scripts
 ===============
 
 .. contents::
     :local:
+    :depth: 1
+
+.. _python:
 
 Python
 ---------------
@@ -18,6 +21,7 @@ Python
 Python 是一种解释型、面向对象、动态数据类型的高级程序设计语言。由Guido van Rossum 于 1989 年底发明，第一个公开发行版发行于 1991 年。像 Perl 语言一样, Python 源代码同样遵循 GPL(GNU General Public License) 协议。
 
 
+.. _lua:
 
 Lua
 ---------------
@@ -39,4 +43,11 @@ Lua 是巴西里约热内卢天主教大学（Pontifical Catholic University of 
 * 语言内置模式匹配；闭包(closure)；函数也可以看做一个值；提供多线程（协同进程，并非操作系统所支持的线程）支持；
 * 通过闭包和table可以很方便地支持面向对象编程所需要的一些关键机制，比如数据抽象，虚函数，继承和重载等。
 
+.. _ruby:
 
+Ruby
+-----------
+
+Ruby是一种简单快捷的面向对象（面向对象程序设计）脚本语言，在20世纪90年代由日本人松本行弘(Yukihiro Matsumoto)开发，遵守GPL协议和Ruby License。
+
+Ruby是动态语言，你可以在程序中修改先前定义过的类。 也可以在某个类的实例中定义该实例特有的方法，这叫做单例方法。

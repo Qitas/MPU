@@ -5,6 +5,7 @@ WS2812驱动
 
 .. contents::
     :local:
+    :depth: 1
 
 WS2812简介
 ---------------

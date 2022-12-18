@@ -5,6 +5,7 @@ GCC
 
 .. contents::
     :local:
+    :depth: 1
 
 简介
 -------------
@@ -86,6 +87,7 @@ armcc
 ~~~~~~~~~~~~~~~~~~~~~
 
 ARM 公司推出的编译工具，功能和 arm-none-eabi 类似，可以编译裸机程序（u-boot、kernel），但是不能编译 Linux 应用程序。
+
 armcc一般和ARM开发工具一起，Keil MDK、ADS、RVDS和DS-5中的编译器都是armcc，所以 armcc 编译器都是收费的。
 
 

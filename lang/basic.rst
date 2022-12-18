@@ -1,10 +1,16 @@
-.. _lan_c:
+.. _lan_basic:
 
-C系语言
+底层语言
 ===============
+
+.. toctree::
+    :maxdepth: 1
+
+    汇编语言 <asm>
 
 .. contents::
     :local:
+    :depth: 1
 
 C语言
 -----------
@@ -24,8 +30,9 @@ C 语言最初是用于系统开发工作，特别是组成操作系统的程序
 
     数据结构 <data>
     堆栈相关 <stack>
-    编译相关 <compile>
     标准函数 <stdio>
+    编译原理 <compile>
+
 
 关键词
 ^^^^^^^^^^^^^^
