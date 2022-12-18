@@ -185,7 +185,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    ('index', 'Qitas.tex', u'Knowledge Domain', u'Qitas', 'manual'),
+    ('index', 'Qitas.tex', u'Knowledge Framework', u'Qitas', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of

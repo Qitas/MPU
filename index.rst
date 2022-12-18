@@ -1,7 +1,7 @@
 
 Knowledge
 ===============
-**experiences**
+**experiences sharing**
 
 ==================  ==================  ==================
 |软件开发|_          |效率工具|_         |生态架构|_
@@ -13,14 +13,12 @@ Knowledge
 .. |软件开发| image:: _static/images/api.png
 .. _软件开发: lang/index.html
 
-.. |效率工具| image:: _static/images/system.png
+.. |效率工具| image:: _static/images/tools.png
 .. _效率工具: tools/index.html
 
-.. |生态架构| image:: _static/images/contribute.png
+.. |生态架构| image:: _static/images/system.png
 .. _生态架构: system/index.html
 
-
-关于芯片选型对比 `芯闻 Xindex <https://doc.SoC.xin>`_ ，关于开源资源整理 `OS-Q <https://docs.OS-Q.com>`_，关于产品及服务的构建 `STOPstop <https://doc.stops.top/>`_
 
 .. toctree::
     :caption: 产品实现
@@ -40,3 +38,5 @@ Knowledge
 
 .. image:: _static/images/all.png
     :target: https://www.qitas.cn
+
+关于芯片选型对比 `芯闻 Xindex <https://doc.SoC.xin>`_ ，关于开源资源整理 `OS-Q <https://docs.OS-Q.com>`_，关于产品及服务的构建 `STOPstop <https://doc.stops.top/>`_
