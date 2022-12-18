@@ -35,6 +35,30 @@
 
 入侵检测: 安装snort轻量级入侵检测系统，部署在网络的旁路，既可以监听流过的网络流量是否存在入侵攻击，也不会影响服务器的网络性能。
 
+
+常用系统命令
+~~~~~~~~~~~~~~~
+
+Vmstat、sar、iostat、netstat、free、ps、top
+
+
+利用sar命令监控系统CPU
+
+sar对系统每方面进行单独统计，但会增加系统开销，不过开销可以评估，对系统的统计结果不会有很大影响。
+下面是sar命令对某个系统的CPU统计输出：
+
+[root@webserver ~]# sar -u 3 5
+
+输出解释如下：
+
+* %user列显示了用户进程消耗的CPU 时间百分比。
+* %nice列显示了运行正常进程所消耗的CPU 时间百分比。
+* %system列显示了系统进程消耗的CPU时间百分比。
+* %iowait列显示了IO等待所占用的CPU时间百分比
+* %steal列显示了在内存相对紧张的环境下pagein强制对不同的页面进行的steal操作 。
+* %idle列显示了CPU处在空闲状态的时间百分比。
+
+
 systemctl是CentOS7的服务管理工具中主要的工具，它融合之前service和chkconfig的功能于一体。
 
 chkconfig

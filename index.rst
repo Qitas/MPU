@@ -1,7 +1,7 @@
 
 Knowledge
 ===============
-**experiences sharing**
+**Experiences Sharing**
 
 ==================  ==================  ==================
 |软件开发|_          |效率工具|_         |生态架构|_
@@ -13,10 +13,10 @@ Knowledge
 .. |软件开发| image:: _static/images/api.png
 .. _软件开发: lang/index.html
 
-.. |效率工具| image:: _static/images/tools.png
+.. |效率工具| image:: _static/images/tool.png
 .. _效率工具: tools/index.html
 
-.. |生态架构| image:: _static/images/system.png
+.. |生态架构| image:: _static/images/systems.png
 .. _生态架构: system/index.html
 
 
