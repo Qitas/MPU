@@ -39,4 +39,4 @@ Knowledge
 .. image:: _static/images/all.png
     :target: https://www.qitas.cn
 
-关于芯片选型对比 `芯闻 Xindex <https://doc.SoC.xin>`_ ，关于开源资源整理 `OS-Q <https://docs.OS-Q.com>`_，关于产品及服务的构建 `STOPstop <https://doc.stops.top/>`_
+关于芯片选型对比 `芯闻 Xindex <https://doc.SoC.xin>`_ ，关于开源资源整理 `OS-Q <https://doc.OS-Q.com>`_，关于产品及服务的构建 `STOPstop <https://doc.stops.top/>`_

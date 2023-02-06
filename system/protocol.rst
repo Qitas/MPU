@@ -1,20 +1,16 @@
-.. _product:
 
-产品架构
+.. _protocol:
+
+Protocol
 ===============
 
-.. toctree::
-    :maxdepth: 1
-
-    云平台 <cloud>
-
-网络通信
------------
 
 .. contents::
     :local:
     :depth: 1
 
+网络通信
+-----------
 
 LwIP
 ~~~~~~~~~~~
@@ -39,11 +35,6 @@ LwIP具有主要特性：
 * 12）提供专门的内部回调接口(Raw API)，用于提高应用程序性能。
 * 13）提供可选择的 Socket API、 NETCONN API (在多线程情况下使用) 。
 
-TCP
-~~~~~~~~~~~
-
-UDP
-~~~~~~~~~~~
 
 MQTT
 ~~~~~~~~~~~
