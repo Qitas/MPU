@@ -146,7 +146,6 @@ SDCC
     :maxdepth: 1
 
     SDCC  <sdcc>
-    SDCC  <lint>
 
 Lint
 ---------------

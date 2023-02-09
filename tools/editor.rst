@@ -9,20 +9,12 @@ Editor
     VSCode <vscode>
     Source Insight <si>
 
-.. contents::
-    :local:
-    :depth: 1
-
 .. _markdown:
 
 Markdown
 ------------
 
 Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（John Gruber）。
-
-
-编码
-------------
 
 
 UTF-8
@@ -38,3 +30,5 @@ UTF-8编码规则：如果只有一个字节则其最高二进制位为0；如�
 
 * 优点：UTF-8编码可以通过屏蔽位和移位操作快速读写。字符串比较时strcmp()和wcscmp()的返回结果相同，因此使排序变得更加容易。字节FF和FE在UTF-8编码中永远不会出现，因此他们可以用来表明UTF-16或UTF-32文本（见BOM） UTF-8 是字节顺序无关的。它的字节顺序在所有系统中都是一样的，因此它实际上并不需要BOM。
 * 缺点：你无法从UNICODE字符数判断出UTF-8文本的字节数，因为UTF-8是一种变长编码它需要用2个字节编码那些用扩展ASCII字符集只需1个字节的字符 ISO Latin-1 是UNICODE的子集，但不是UTF-8的子集 8位字符的UTF-8编码会被email网关过滤，因为internet信息最初设计为7位ASCII码。因此产生了UTF-7编码。 UTF-8 在它的表示中使用值100xxxxx的几率超过50%， 而现存的实现如ISO 2022， 4873， 6429， 和8859系统，会把它错认为是C1 控制码。因此产生了UTF-7.5编码。
+
+
