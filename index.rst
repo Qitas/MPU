@@ -25,7 +25,7 @@ Knowledge
     :maxdepth: 1
 
     软件开发 <lang/index>
-    平台工具 <tools/index>
+    工具依赖 <tools/index>
     生态依赖 <system/index>
 
 .. toctree::

@@ -1,6 +1,6 @@
 .. _tools:
 
-平台工具
+工具依赖
 ===========
 
 .. toctree::
@@ -9,4 +9,3 @@
     GNU GCC <gcc>
     嵌入式 IDE <ide>
     编辑器 Editor <editor>
-
