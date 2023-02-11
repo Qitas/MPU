@@ -4,20 +4,20 @@ Knowledge
 **Experiences Sharing**
 
 ==================  ==================  ==================
-|软件开发|_          |平台工具|_         |生态依赖|_
+|软件开发|_          |实用工具|_         |系统依赖|_
 ------------------  ------------------  ------------------
-`软件开发`_          `平台工具`_         `生态依赖`_
+`软件开发`_          `实用工具`_         `系统依赖`_
 ==================  ==================  ==================
 
 
 .. |软件开发| image:: _static/images/api.png
 .. _软件开发: lang/index.html
 
-.. |平台工具| image:: _static/images/tool.png
-.. _平台工具: tools/index.html
+.. |实用工具| image:: _static/images/tool.png
+.. _实用工具: tools/index.html
 
-.. |生态依赖| image:: _static/images/systems.png
-.. _生态依赖: system/index.html
+.. |系统依赖| image:: _static/images/systems.png
+.. _系统依赖: system/index.html
 
 
 .. toctree::
@@ -25,8 +25,9 @@ Knowledge
     :maxdepth: 1
 
     软件开发 <lang/index>
-    工具依赖 <tools/index>
-    生态依赖 <system/index>
+    实用工具 <tools/index>
+    硬件基础 <device/index>
+    系统依赖 <system/index>
 
 .. toctree::
     :caption: 项目变现
@@ -39,4 +40,4 @@ Knowledge
 .. image:: _static/images/all.png
     :target: https://www.qitas.cn
 
-芯片选型验证 `Xindex <https://doc.SoC.xin>`_ ，开源资源集锦 `OS-Q <https://doc.OS-Q.com>`_，平台服务工具 `STOPstop <https://doc.stops.top/>`_
+芯片选型验证 `Xindex <https://doc.SoC.xin>`_ ，开源资源集锦 `OS-Q <https://www.OS-Q.com>`_，平台服务工具 `STOPstop <https://doc.stops.top/>`_
