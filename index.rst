@@ -37,6 +37,14 @@ Knowledge
     文件管理 <sources/index>
     质量管理 <quality/index>
 
+.. toctree::
+    :caption: 资源储备
+    :maxdepth: 1
+
+    人工智能 <ai/index>
+
+
+
 .. image:: _static/images/all.png
     :target: https://www.qitas.cn
 
