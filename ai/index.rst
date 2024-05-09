@@ -10,6 +10,7 @@
     激活函数 <activation>
     优化器 <optimizer>
     LSTM <lstm>
+    LLM <llm>
 
 
 
