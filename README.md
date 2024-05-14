@@ -60,6 +60,7 @@
 | Mixtral-8x7B-Instruct-v0.1 | 71.4 |  |  |
 | Mixtral-8x22B-Instruct-v0.1 | 77.7 |  |  |
 | DeepSeek-V1(Dense-67B) | 71.3 | 68.7 | 139.0 |
+| GPT-4 | 83 |  |  |
 
 </div>
 
@@ -70,14 +71,17 @@
 | **Chinese Domain** | **C-Eval** | **CMMLU** | **Total** |
 |:-----------:|:--------:|:------------:|:------------:|
 | **DeepSeek-V2 (MoE-236B)** | 81.7 | 84.0 | 165.7 |
-| **QWen1.5 72B Chat** | 82.2 | 82.9 | 165.1 |
+| **QWen1.5-72B-Chat** | 82.2 | 82.9 | 165.1 |
 | **DeepSeek-V2 Chat (SFT)** | 80.9 | 82.4 | 163.3 |
 | **DeepSeek-V2 Chat (RL)** | 78.0 | 81.6 | 159.6 |
-| **LLaMA3 70B Instruct** | 67.9 | 70.7 | 138.6 |
-| **DeepSeek-V1 (Dense-67B)** | 66.1 | 70.8 | 136.9 |
-| **LLaMA3 70B** | 67.5 | 69.3 | 136.8 |
+| **LLaMA3-70B-Instruct** | 67.9 | 70.7 | 138.6 |
+| DeepSeek-V1(Dense-67B) | 66.1 | 70.8 | 136.9 |
+| **LLaMA3-70B** | 67.5 | 69.3 | 136.8 |
 | **DeepSeek-V1 Chat (SFT)** | 65.2 | 67.8 | 133.0 |
 | **Mixtral 8x22B** | 60.0 | 61.0 | 121.0 |
+| GPT-4 | 69.9| 71.0 |  |
+| QWen-14B-Chat | 71.7 | 70.0 |  |
+| [Yi-34B-Chat](https://github.com/OrionStarAI/OrionStar-Yi-34B-Chat) | 77.71 | 73.52 |  |
 
 </div>
 
@@ -114,7 +118,6 @@
 | **LLaMA3-8B**      |  |  | 62.2 |
 | Yi-Chat-34B | 7.9 |  |  |  |
 | QWen-14B-Chat | 11.1 |  |  |  |
-
 | DeepSeek-Coder-33B-Instruct | 31.7 |  |  |  |
 | GPT-4-Turbo | 48.4 |  |  |  |
 
