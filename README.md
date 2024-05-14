@@ -53,9 +53,13 @@
 | **DeepSeek-V2 (MoE-236B)** | 78.5 | 78.9 | 157.4 |
 | **Mixtral 8x22B** | 77.6 | 78.9 | 156.5 |
 | **Mixtral 8x22B** | 77.8 | 78.4 | 156.2 |
-| **DeepSeek-V1 Chat (SFT)** | 71.1 | 71.7 | 142.8 |
-| **QWen1.5 72B Chat** | 76.2 | 65.9 | 142.1 |
-| **DeepSeek-V1 (Dense-67B)** | 71.3 | 68.7 | 139.0 |
+| **DeepSeek-V1 Chat(SFT)** | 71.1 | 71.7 | 142.8 |
+| **QWen1.5-72B-Chat** | 77.3 | 65.9 | 142.1 |
+| **Yi-1.5-34B-Chat** | 76.8 |  |  |
+| QWen1.5-32B-Chat | 74.3 | |  |  |
+| Mixtral-8x7B-Instruct-v0.1 | 71.4 |  |  |
+| Mixtral-8x22B-Instruct-v0.1 | 77.7 |  |  |
+| DeepSeek-V1(Dense-67B) | 71.3 | 68.7 | 139.0 |
 
 </div>
 
@@ -81,20 +85,38 @@
 
 <div align="center">
 
-| **Code Domain** | **HumanEval** | **MBPP** | **LiveCodeBench(0901-0401)** | **Total** |
+| **Code Domain** | HumanEval | MBPP | LiveCodeBench(0901-0401) | MT-Bench |
 |:-----------:|:--------:|:------------:|:------------:|:------------:|
 | **DeepSeek-V2 Chat (RL)** | 81.1 | 72.0 | 32.5 |  |
 | **LLaMA3 70B Instruct** | 76.2 | 69.8 | 30.5 |  |
 | **DeepSeek-V2 Chat (SFT)** | 76.8 | 70.4 | 28.7 |  |
-| **Mixtral 8x22B** | 75.0 | 64.4 | 25.0 |  |
-| **DeepSeek-V1 Chat (SFT)** | 73.8 | 61.4 | 18.3 |  |
-| **QWen1.5 72B Chat** | 68.9 | 52.2 | 18.8 |  |
-| **LLaMA3 70B** | 48.2 | 68.6 |  |
-| **DeepSeek-V2 (MoE-236B)** | 48.8 | 66.6 |  |
-| **DeepSeek-V1 (Dense-67B)** | 45.1 | 57.4 |  |
+| **Yi-1.5-34B-Chat** | 75.2 | 74.6 |  | 8.5 |
+| **Mixtral-8x22B** | 75.0 | 64.4 | 25.0 |  |
+| **DeepSeek-V1-Chat (SFT)** | 73.8 | 61.4 | 18.3 |  |
+| **QWen1.5-72B-Chat** | 64.6 | 72.5 | 18.8 | 8.6 |
+| **LLaMA3-70B** | 48.2 | 68.6 |  |
+| **DeepSeek-V2(MoE-236B)** | 48.8 | 66.6 |  |
+| DeepSeek-V1 (Dense-67B) | 45.1 | 57.4 |  |
+| QWen1.5-32B-Chat | 51.2 | 66.9 |  | 8.3 |
+| Mixtral-8x7B-Instruct-v0.1 | 45.1 | 59.5 |  | 8.3 |
+| Mixtral-8x22B-Instruct-v0.1 | 76.2 | 73.8 |  | 8.6 |
+
+</div>
+
+<div align="center">
+
+| HumanEval | Pass@1 | Pass@10 | 0-shot | 5-shot |
+|:-----------:|:--------:|:------------:|:------------:|:------------:|
 | **StarCoder2-15B** |  |  |  |
-| **StarCoder2-7B** |  |  |  |
-| **StarCoder2-3B** |  |  |  |
+| **StarCoder2-7B**  |  |  |  |
+| **StarCoder2-3B**  |  |  |  |
+| **LLaMA3-70B**     |  |  | 81.7 |
+| **LLaMA3-8B**      |  |  | 62.2 |
+| Yi-Chat-34B | 7.9 |  |  |  |
+| QWen-14B-Chat | 11.1 |  |  |  |
+
+| DeepSeek-Coder-33B-Instruct | 31.7 |  |  |  |
+| GPT-4-Turbo | 48.4 |  |  |  |
 
 </div>
 
@@ -114,8 +136,13 @@
 | **LLaMA3 70B** | 83.0 | 42.2 | 125.2 |
 | **Mixtral 8x22B** | 80.3 | 42.5 | 122.8 |
 | **DeepSeek-V2 (MoE-236B)** | 79.2 | 43.6 | 122.8 |
-| **QWen1.5 72B Chat** | 81.9 | 40.6 | 122.5 |
-| **DeepSeek-V1 Chat (SFT)** | 84.1 | 32.6 | 116.7 |
-| **DeepSeek-V1 (Dense-67B)** | 63.4 | 18.7 | 82.1 |
+| **QWen1.5-72B-Chat** | 86.0 | 44.4 |  |
+| DeepSeek-V1 Chat (SFT) | 84.1 | 32.6 | 116.7 |
+| DeepSeek-V1 (Dense-67B) | 63.4 | 18.7 | 82.1 |
+| **Yi-1.5-34B-Chat** | 90.2 | 50.1 |  |
+| **QWen1.5-32B-Chat** | 83.9 | 43.3 |  |
+| Mixtral-8x7B-Instruct-v0.1 | 65.7 | 30.7 |  |
+| Mixtral-8x22B-Instruct-v0.1 | 84.0 | 41.1 |  |
+
 </div>
 
